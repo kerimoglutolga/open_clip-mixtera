@@ -526,6 +526,9 @@ def get_synthetic_dataset(args, preprocess_fn, is_train, epoch=0, tokenizer=None
 def get_dataset_fn(data_path, dataset_type):
     if dataset_type == "webdataset":
         return get_wds_dataset
+    if dataset_type == "mixtera_webdataset":
+        from open_clip_train.mixtera_utils import get_wds_loader
+        return get_wds_loader
     elif dataset_type == "csv":
         return get_csv_dataset
     elif dataset_type == "synthetic":

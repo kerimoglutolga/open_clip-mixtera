@@ -6,7 +6,7 @@
 #SBATCH --partition=normal
 #SBATCH --environment=open_clip
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
+#SBATCH --ntasks-per-node=4
 #SBATCH --gres=gpu:4
 #SBATCH --cpus-per-task=72
 #SBATCH --mem=460000
@@ -34,7 +34,7 @@ srun --accel-bind=gn -ul --container-writable --environment=open_clip bash -c "
 \$PYTHON_EXEC -u /iopsstor/scratch/cscs/tkerimog/open_clip/open_clip-mixtera/src/open_clip_train/main.py \
 --save-frequency 1 \
 --model ViT-B-32 \
---epochs 5 \
+--epochs 1 \
 --seed 0 \
 --local-loss \
 --gather-with-grad \
@@ -43,7 +43,9 @@ srun --accel-bind=gn -ul --container-writable --environment=open_clip bash -c "
 --dataset-type mixtera_webdataset \
 --batch-size 256 \
 --workers 4 \
---report-to wandb
+--report-to wandb \
+--logs /iopsstor/scratch/cscs/tkerimog/open_clip/open_clip-mixtera/logs \
+--save-most-recent
 "
 
 

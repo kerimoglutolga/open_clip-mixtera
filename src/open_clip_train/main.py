@@ -484,12 +484,19 @@ def main(args):
         train_one_epoch(model, data, loss, epoch, optimizer, scaler, scheduler, dist_model, args, tb_writer=writer)
         completed_epoch = epoch + 1
 
+        # Reinitialize data since Mixtera bugs out on second epoch
+        data = get_data(
+        args,
+        (preprocess_train, preprocess_val),
+        epoch=start_epoch,
+        tokenizer=tokenizer,
+        )
+
         if any(v in data for v in ('val', 'imagenet-val', 'imagenet-v2')):
             evaluate(model, data, completed_epoch, args, tb_writer=writer, tokenizer=tokenizer)
 
         # Saving checkpoints.
         if is_master(args):
-            print(f"Saving logs to {log_base_path}")
             checkpoint_dict = {
                 "epoch": completed_epoch,
                 "name": args.name,
@@ -502,7 +509,6 @@ def main(args):
             if completed_epoch == args.epochs or (
                 args.save_frequency > 0 and (completed_epoch % args.save_frequency) == 0
             ):  
-                print(f"Saving checkpoint to {args.checkpoint_path}")
                 torch.save(
                     checkpoint_dict,
                     os.path.join(args.checkpoint_path, f"epoch_{completed_epoch}.pt"),

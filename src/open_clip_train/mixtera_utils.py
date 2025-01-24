@@ -20,6 +20,7 @@ from mixtera.torch import MixteraTorchDataset
 from open_clip_train.distributed import world_info_from_env
 
 warnings.simplefilter("ignore", RuntimeWarning)
+warnings.simplefilter("ignore", UserWarning)
 
 logger.remove()
 # logger.add(sys.stderr, level="INFO")

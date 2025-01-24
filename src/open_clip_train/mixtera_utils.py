@@ -6,6 +6,7 @@ import logging
 import math
 import os
 import sys
+import uuid
 
 from loguru import logger
 import webdataset as wds
@@ -58,6 +59,9 @@ def get_wds_loader(args, preprocess_img, is_train, epoch=0, floor=False, tokeniz
 
     assert server_host is not None, "MIXTERA_SERVER_ADDR must be set"
     assert server_port is not None, "MIXTERA_SERVER_PORT must be set"
+    assert job_id is not None, "MIXTERA_JOB_ID must be set"
+
+    job_id += f"_{epoch}"
     
     # Setup Mixtera
     local_rank, global_rank, world_size = world_info_from_env()

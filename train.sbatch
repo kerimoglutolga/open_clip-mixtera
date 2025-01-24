@@ -5,7 +5,7 @@
 #SBATCH --error=./output.err
 #SBATCH --partition=normal
 #SBATCH --environment=open_clip
-#SBATCH --nodes=1
+#SBATCH --nodes=4
 #SBATCH --ntasks-per-node=4
 #SBATCH --gres=gpu:4
 #SBATCH --cpus-per-task=72
@@ -34,12 +34,12 @@ srun --accel-bind=gn -ul --container-writable --environment=open_clip bash -c "
 \$PYTHON_EXEC -u /iopsstor/scratch/cscs/tkerimog/open_clip/open_clip-mixtera/src/open_clip_train/main.py \
 --save-frequency 1 \
 --model ViT-B-32 \
---epochs 1 \
+--epochs 5 \
 --seed 0 \
 --local-loss \
 --gather-with-grad \
 --train-data '/iopsstor/scratch/cscs/tkerimog/datasets/cc12m-wds/cc12m-train-{0000..2175}.tar' \
---train-num-samples 100000 \
+--train-num-samples 10968539 \
 --dataset-type mixtera_webdataset \
 --batch-size 256 \
 --workers 4 \

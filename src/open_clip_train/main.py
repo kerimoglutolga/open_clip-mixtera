@@ -488,7 +488,7 @@ def main(args):
         data = get_data(
         args,
         (preprocess_train, preprocess_val),
-        epoch=start_epoch,
+        epoch=completed_epoch,
         tokenizer=tokenizer,
         )
 

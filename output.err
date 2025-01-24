@@ -1,0 +1,548 @@
+2025-01-24 15:34:10.655 | INFO     | __main__:main:46 - Starting server, serving from directory /iopsstor/scratch/cscs/tkerimog/open_clip/mixtera_server
+2025-01-24 15:34:10.658 | DEBUG    | mixtera.core.client.mixtera_client:__init__:138 - Initialized current mixture id to -1.
+2025-01-24 15:34:10.659 | INFO     | mixtera.core.datacollection.mixtera_data_collection:_load_db_from_disk:76 - Loading database from /iopsstor/scratch/cscs/tkerimog/open_clip/mixtera_server/mixtera.duckdb
+2025-01-24 15:34:10.683 | INFO     | mixtera.core.datacollection.mixtera_data_collection:_load_db_from_disk:78 - Database loaded.
+2025-01-24 15:34:10.697 | INFO     | mixtera.core.datacollection.mixtera_data_collection:_vacuum:123 - Vacuuming the DuckDB.
+2025-01-24 15:34:10.697 | INFO     | mixtera.core.datacollection.mixtera_data_collection:_vacuum:125 - Vacuumd.
+2025-01-24 15:34:10.698 | DEBUG    | mixtera.core.query.query_cache:__init__:18 - Initializing QueryCache at /iopsstor/scratch/cscs/tkerimog/open_clip/mixtera_server/querycache
+2025-01-24 15:34:10.708 | INFO     | mixtera.network.server.server:_run_async:377 - Serving MixteraServer on ('172.28.15.64', 12345)
+ 4: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+ 0: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+12: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+ 4: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+ 0: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+12: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+ 4: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+ 0: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+12: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+ 4: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+ 0: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+12: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+ 4: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+ 0: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+12: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+ 8: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+ 8: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+ 8: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+ 8: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+ 8: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+ 0: 2025-01-24,15:34:48 | INFO | Running in distributed mode with multiple processes. Device: cuda:0.Process (global: 0, local 0), total 16.
+ 8: 2025-01-24,15:34:48 | INFO | Running in distributed mode with multiple processes. Device: cuda:0.Process (global: 8, local 0), total 16.
+11: 2025-01-24,15:34:48 | INFO | Running in distributed mode with multiple processes. Device: cuda:3.Process (global: 11, local 3), total 16.
+ 9: 2025-01-24,15:34:48 | INFO | Running in distributed mode with multiple processes. Device: cuda:1.Process (global: 9, local 1), total 16.
+10: 2025-01-24,15:34:48 | INFO | Running in distributed mode with multiple processes. Device: cuda:2.Process (global: 10, local 2), total 16.
+ 0: 2025-01-24,15:34:48 | INFO | Loaded ViT-B-32 model config.
+ 8: 2025-01-24,15:34:48 | INFO | Loaded ViT-B-32 model config.
+11: 2025-01-24,15:34:48 | INFO | Loaded ViT-B-32 model config.
+10: 2025-01-24,15:34:48 | INFO | Loaded ViT-B-32 model config.
+ 9: 2025-01-24,15:34:48 | INFO | Loaded ViT-B-32 model config.
+ 3: 2025-01-24,15:34:48 | INFO | Running in distributed mode with multiple processes. Device: cuda:3.Process (global: 3, local 3), total 16.
+ 2: 2025-01-24,15:34:48 | INFO | Running in distributed mode with multiple processes. Device: cuda:2.Process (global: 2, local 2), total 16.
+ 1: 2025-01-24,15:34:48 | INFO | Running in distributed mode with multiple processes. Device: cuda:1.Process (global: 1, local 1), total 16.
+ 2: 2025-01-24,15:34:48 | INFO | Loaded ViT-B-32 model config.
+ 3: 2025-01-24,15:34:48 | INFO | Loaded ViT-B-32 model config.
+ 1: 2025-01-24,15:34:48 | INFO | Loaded ViT-B-32 model config.
+15: 2025-01-24,15:34:48 | INFO | Running in distributed mode with multiple processes. Device: cuda:3.Process (global: 15, local 3), total 16.
+13: 2025-01-24,15:34:48 | INFO | Running in distributed mode with multiple processes. Device: cuda:1.Process (global: 13, local 1), total 16.
+14: 2025-01-24,15:34:48 | INFO | Running in distributed mode with multiple processes. Device: cuda:2.Process (global: 14, local 2), total 16.
+12: 2025-01-24,15:34:48 | INFO | Running in distributed mode with multiple processes. Device: cuda:0.Process (global: 12, local 0), total 16.
+ 4: 2025-01-24,15:34:48 | INFO | Running in distributed mode with multiple processes. Device: cuda:0.Process (global: 4, local 0), total 16.
+ 5: 2025-01-24,15:34:48 | INFO | Running in distributed mode with multiple processes. Device: cuda:1.Process (global: 5, local 1), total 16.
+ 6: 2025-01-24,15:34:48 | INFO | Running in distributed mode with multiple processes. Device: cuda:2.Process (global: 6, local 2), total 16.
+ 7: 2025-01-24,15:34:48 | INFO | Running in distributed mode with multiple processes. Device: cuda:3.Process (global: 7, local 3), total 16.
+15: 2025-01-24,15:34:48 | INFO | Loaded ViT-B-32 model config.
+14: 2025-01-24,15:34:48 | INFO | Loaded ViT-B-32 model config.
+ 5: 2025-01-24,15:34:48 | INFO | Loaded ViT-B-32 model config.
+13: 2025-01-24,15:34:48 | INFO | Loaded ViT-B-32 model config.
+ 4: 2025-01-24,15:34:48 | INFO | Loaded ViT-B-32 model config.
+12: 2025-01-24,15:34:48 | INFO | Loaded ViT-B-32 model config.
+ 7: 2025-01-24,15:34:48 | INFO | Loaded ViT-B-32 model config.
+ 6: 2025-01-24,15:34:48 | INFO | Loaded ViT-B-32 model config.
+ 0: 2025-01-24,15:34:49 | INFO | Model:
+ 0: 2025-01-24,15:34:49 | INFO | CLIP(
+ 0:   (visual): VisionTransformer(
+ 0:     (conv1): Conv2d(3, 768, kernel_size=(32, 32), stride=(32, 32), bias=False)
+ 0:     (patch_dropout): Identity()
+ 0:     (ln_pre): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+ 0:     (transformer): Transformer(
+ 0:       (resblocks): ModuleList(
+ 0:         (0-11): 12 x ResidualAttentionBlock(
+ 0:           (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+ 0:           (attn): MultiheadAttention(
+ 0:             (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+ 0:           )
+ 0:           (ls_1): Identity()
+ 0:           (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+ 0:           (mlp): Sequential(
+ 0:             (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+ 0:             (gelu): GELU(approximate='none')
+ 0:             (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+ 0:           )
+ 0:           (ls_2): Identity()
+ 0:         )
+ 0:       )
+ 0:     )
+ 0:     (ln_post): LayerNorm((768,), eps=1e-05, elementwise_a
+ 0: ffine=True)
+ 0:   )
+ 0:   (transformer): Transformer(
+ 0:     (resblocks): ModuleList(
+ 0:       (0-11): 12 x ResidualAttentionBlock(
+ 0:         (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+ 0:         (attn): MultiheadAttention(
+ 0:           (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+ 0:         )
+ 0:         (ls_1): Identity()
+ 0:         (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+ 0:         (mlp): Sequential(
+ 0:           (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+ 0:           (gelu): GELU(approximate='none')
+ 0:           (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+ 0:         )
+ 0:         (ls_2): Identity()
+ 0:       )
+ 0:     )
+ 0:   )
+ 0:   (token_embedding): Embedding(49408, 512)
+ 0:   (ln_final): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+ 0: )
+ 0: 2025-01-24,15:34:49 | INFO | Params:
+ 0: 2025-01-24,15:34:49 | INFO |   accum_freq: 1
+ 0: 2025-01-24,15:34:49 | INFO |   aug_cfg: {}
+ 0: 2025-01-24,15:34:49 | INFO |   batch_size: 256
+ 0: 2025-01-24,15:34:49 | INFO |   beta1: 0.9
+ 0: 2025-01-24,15:34:49 | INFO |   beta2: 0.98
+ 0: 2025-01-24,15:34:49 | INFO |   cache_dir: None
+ 0: 2025-01-24,15:34:49 | INFO |   checkpoint_path: /iopsstor/scratch/cscs/tkerimog/open_clip/open_clip-mixtera/logs/2025_01_24-15_34_43-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp/checkpoints
+ 0: 2025-01-24,15:34:49 | INFO |   coca_caption_loss_weight: 2.0
+ 0: 2025-01-24,15:34:49 | INFO |   coca_contrastive_loss_weight: 1.0
+ 0: 2025-01-24,15:34:49 | INFO |   copy_codebase: False
+ 0: 2025-01-24,15:34:49 | INFO |   csv_caption_key: title
+ 0: 2025-01-24,15:34:49 | INFO |   csv_img_key: filepath
+ 0: 2025-01-24,15:34:49 | INFO |   csv_separator: 	
+ 0: 2025-01-24,15:34:49 | INFO |   dataset_resampled: False
+ 0: 2025-01-24,15:34:49 | INFO |   dataset_type: mixtera_webdataset
+ 0: 2025-01-24,15:34:49 | INFO |   ddp_static_graph: False
+ 0: 2025-01-24,15:34:49 | INFO |   debug: False
+ 0: 2025-01-24,15:34:49 | INFO |   delete_previous_checkpoint: False
+ 0: 2025-01-24,15:34:49 | INFO |   device: cuda:0
+ 0: 2025-01-24,15:34:49 | INFO |   dist_backend: None
+ 0: 2025-01-24,15:34:49 | INFO |   dist_url: None
+ 0: 2025-01-24,15:34:49 | INFO |   distill: False
+ 0: 2025-01-24,15:34:49 | INFO |   distill_model: None
+ 0: 2025-01-24,15:34:49 | INFO |   distill_pretrained: None
+ 0: 2025-01-24,15:34:49 | INFO |   distributed: True
+ 0: 2025-01-24,15:34:49 | INFO |   epochs: 5
+ 0: 2025-01-24,15:34:49 | INFO |   epochs_cooldown: None
+ 0: 2025-01-24,15:34:49 | INFO |   eps: 1e-06
+ 0: 2025-01-24,15:34:49 | INFO |   force_custom_text: False
+ 0: 2025-01-24,15:34:49 | INFO |   force_image_size: None
+ 0: 2025-01-24,15:34:49 | INFO |   force_patch_dropout: None
+ 0: 2025-01-24,15:34:49 | INFO |   force_quick_gelu: False
+ 0: 2025-01-24,15:34:49 | INFO |   gather_with_grad: True
+ 0: 2025-01-24,15:34:49 | INFO |   grad_checkpointing: False
+ 0: 2025-01-24,15:34:49 | INFO |   grad_clip_norm: None
+ 0: 2025-01-24,15:34:49 | INFO |   horovod: False
+ 0: 2025-01-24,15:34:49 | INFO |   image_interpolation: None
+ 0: 2025-01-24,15:34:49 | INFO |   image_mean: None
+ 0: 2025-01-24,15:34:49 | INFO |   image_resize_mode: None
+ 0: 2025-01-24,15:34:49 | INFO |   image_std: None
+ 0: 2025-01-24,15:34:49 | INFO |   imagenet_v2: None
+ 0: 2025-01-24,15:34:49 | INFO |   imagenet_val: None
+ 0: 2025-01-24,15:34:49 | INFO |   local_loss: True
+ 0: 2025-01-24,15:34:49 | INFO |   local_rank: 0
+ 0: 2025-01-24,15:34:49 | INFO |   lock_image: False
+ 0: 2025-01-24,15:34:49 | INFO |   lock_image_freeze_bn_stats: False
+ 0: 2025-01-24,15:34:49 | INFO |   lock_image_unlocked_groups: 0
+ 0: 2025-01-24,15:34:49 | INFO |   lock_text: False
+ 0: 2025-01-24,15:34:49 | INFO |   lock_text_freeze_layer_norm: False
+ 0: 2025-01-24,15:34:49 | INFO |   lock_text_unlocked_layers: 0
+ 0: 2025-01-24,15:34:49 | INFO |   log_every_n_steps: 100
+ 0: 2025-01-24,15:34:49 | INFO |   log_level: 20
+ 0: 2025-01-24,15:34:49 | INFO |   log_local: False
+ 0: 2025-01-24,15:34:49 | INFO |   log_path: /iopsstor/scratch/cscs/tkerimog/open_clip/open_clip-mixtera/logs/2025_01_24-15_34_43-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp/out.log
+ 0: 2025-01-24,15:34:49 | INFO |   logs: /iopsstor/scratch/cscs/tkerimog/open_clip/open_clip-mixtera/logs
+ 0: 2025-01-24,15:34:49 | INFO |   loss_dist_impl: None
+ 0: 2025-01-24,15:34:49 | INFO |   lr: 0.0005
+ 0: 2025-01-24,15:34:49 | INFO |   lr_cooldown_end: 0.0
+ 0: 2025-01-24,15:34:49 | INFO |   lr_cooldown_power: 1.0
+ 0: 2025-01-24,15:34:49 | INFO |   lr_scheduler: cosine
+ 0: 2025-01-24,15:34:49 | INFO |   model: ViT-B-32
+ 0: 2025-01-24,15:34:49 | INFO |   momentum: None
+ 0: 2025-01-24,15:34:49 | INFO |   name: 2025_01_24-15_34_43-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp
+ 0: 2025-01-24,15:34:49 | INFO |   no_set_device_rank: False
+ 0: 2025-01-24,15:34:49 | INFO |   opt: adamw
+ 0: 2025-01-24,15:34:49 | INFO |   precision: amp
+ 0: 2025-01-24,15:34:49 | INFO |   pretrained: 
+ 0: 2025-01-24,15:34:49 | INFO |   pretrained_image: False
+ 0: 2025-01-24,15:34:49 | INFO |   rank: 0
+ 0: 2025-01-24,15:34:49 | INFO |   remote_sync: None
+ 0: 2025-01-24,15:34:49 | INFO |   remote_sync_frequency: 300
+ 0: 2025-01-24,15:34:49 | INFO |   remote_sync_protocol: s3
+ 0: 2025-01-24,15:34:49 | INFO |   report_to: wandb
+ 0: 2025-01-24,15:34:49 | INFO |   resume: None
+ 0: 2025-01-24,15:34:49 | INFO |   save_frequency: 1
+ 0: 2025-01-24,15:34:49 | INFO |   save_most_recent: True
+ 0: 2025-01-24,15:34:49 | INFO |   seed: 0
+ 0: 2025-01-24,15:34:49 | INFO |   siglip: False
+ 0: 2025-01-24,15:34:49 | INFO |   skip_scheduler: False
+ 0: 2025-01-24,15:34:49 | INFO |   tensorboard: False
+ 0: 2025-01-24,15:34:49 | INFO |   tensorboard_path: 
+ 0: 2025-01-24,15:34:49 | INFO |   torchcompile: False
+ 0: 2025-01-24,15:34:49 | INFO |   torchscript: False
+ 0: 2025-01-24,15:34:49 | INFO |   trace: False
+ 0: 2025-01-24,15:34:49 | INFO |   train_data: /iopsstor/scratch/cscs/tkerimog/datasets/cc12m-wds/cc12m-train-{0000..2175}.tar
+ 0: 2025-01-24,15:34:49 | INFO |   train_data_upsampling_factors: None
+ 0: 2025-01-24,15:34:49 | INFO |   train_num_samples: 10968539
+ 0: 2025-01-24,15:34:49 | INFO |   use_bn_sync: False
+ 0: 2025-01-24,15:34:49 | INFO |   use_bnb_linear: None
+ 0: 2025-01-24,15:34:49 | INFO |   val_data: None
+ 0: 2025-01-24,15:34:49 | INFO |   val_frequency: 1
+ 0: 2025-01-24,15:34:49 | INFO |   val_num_samples: None
+ 0: 2025-01-24,15:34:49 | INFO |   wandb: True
+ 0: 2025-01-24,15:34:49 | INFO |   wandb_notes: 
+ 0: 2025-01-24,15:34:49 | INFO |   wandb_project_name: open-clip
+ 0: 2025-01-24,15:34:49 | INFO |   warmup: 10000
+ 0: 2025-01-24,15:34:49 | INFO |   wd: 0.2
+ 0: 2025-01-24,15:34:49 | INFO |   workers: 4
+ 0: 2025-01-24,15:34:49 | INFO |   world_size: 16
+ 0: 2025-01-24,15:34:49 | INFO |   zeroshot_frequency: 2
+ 0: 2025-01-24,15:34:49 | INFO | Created AdamW (adamw) optimizer: lr: 0.0005, betas: (0.9, 0.98), eps: 1e-06, weight_decay: 0.2, amsgrad: False, foreach: None, maximize: False, capturable: False, differentiable: False, fused: None
+ 0: 2025-01-24,15:34:50 | INFO | Creating Mixtera dataset with 16 data parallel groups.
+ 1: 2025-01-24,15:34:50 | INFO | Creating Mixtera dataset with 16 data parallel groups.
+ 2: 2025-01-24,15:34:50 | INFO | Creating Mixtera dataset with 16 data parallel groups.
+ 3: 2025-01-24,15:34:50 | INFO | Creating Mixtera dataset with 16 data parallel groups.
+ 1: 2025-01-24,15:34:50 | INFO | Mixtera loader initialized, num_samples: 10977280, num_batches: 2680
+ 2: 2025-01-24,15:34:50 | INFO | Mixtera loader initialized, num_samples: 10977280, num_batches: 2680
+ 3: 2025-01-24,15:34:50 | INFO | Mixtera loader initialized, num_samples: 10977280, num_batches: 2680
+ 2: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
+ 2: In addition, using fork() with Python in general is a recipe for mysterious
+ 2: deadlocks and crashes.
+ 2: 
+ 2: The most likely reason you are seeing this error is because you are using the
+ 2: multiprocessing module on Linux, which uses fork() by default. This will be
+ 2: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
+ 2: 
+ 2: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
+ 2: 
+ 2:   self.pid = os.fork()
+ 1: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
+ 1: In addition, using fork() with Python in general is a recipe for mysterious
+ 1: deadlocks and crashes.
+ 1: 
+ 1: The most likely reason you are seeing this error is because you are using the
+ 1: multiprocessing module on Linux, which uses fork() by default. This will be
+ 1: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
+ 1: 
+ 1: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
+ 1: 
+ 1:   self.pid = os.fork()
+ 3: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
+ 3: In addition, using fork() with Python in general is a recipe for mysterious
+ 3: deadlocks and crashes.
+ 3: 
+ 3: The most likely reason you are seeing this error is because you are using the
+ 3: multiprocessing module on Linux, which uses fork() by default. This will be
+ 3: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
+ 3: 
+ 3: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
+ 3: 
+ 3:   self.pid = os.fork()
+ 0: ┬ T4: <class 'mixtera.core.query.mixture.arbitrary_mixture.ArbitraryMixture'>
+ 0: └ # T4 [68 B]
+ 0: ┬ D2: <dict object at 0x4005ed16d5c0>
+ 0: └ # D2 [37 B]
+2025-01-24 15:34:50.240 | DEBUG    | mixtera.network.server.server:_register_query:61 - Received register query request
+ 0: ┬ T4: <class 'mixtera.core.query.query.Query'>
+ 0: └ # T4 [37 B]
+ 0: ┬ D2: <dict object at 0x4005ed16d640>
+ 0: ├┬ T4: <class 'mixtera.core.query.query_plan.QueryPlan'>
+ 0: │└ # T4 [46 B]
+ 0: ├┬ D2: <dict object at 0x4001fe3ef580>
+ 0: │├┬ T4: <class 'mixtera.core.query.operators.select.Select'>
+ 0: ││└ # T4 [49 B]
+ 0: │├┬ D2: <dict object at 0x4005ed16d680>
+2025-01-24 15:34:50.240 | DEBUG    | mixtera.network.server.server:_register_query:63 - mixture = {"mixture": "arbitrary_mixture", "chunk_size": 1024}
+ 0: ││└ # D2 [32 B]
+ 0: │└ # D2 [95 B]
+ 0: └ # D2 [219 B]
+2025-01-24 15:34:50.240 | DEBUG    | mixtera.network.server.server:_register_query:74 - Received query = select<>([]). Executing it.
+2025-01-24 15:34:50.250 | DEBUG    | mixtera.core.query.query_cache:get_queryresults_if_cached:97 - Returning results from cache!
+2025-01-24 15:34:50.250 | INFO     | mixtera.core.query.query_result:from_cache:655 - Loading QueryResult from cache.
+2025-01-24 15:34:50.251 | DEBUG    | mixtera.core.query.query_result:from_cache:661 - Loaded pickable attributes.
+2025-01-24 15:34:50.253 | DEBUG    | mixtera.core.query.query_result:from_cache:667 - Loaded dillable attributes.
+2025-01-24 15:34:50.254 | DEBUG    | mixtera.core.query.query_result:from_cache:679 - Instantiated QueryResult from pickle/dill.
+2025-01-24 15:34:50.254 | DEBUG    | mixtera.core.query.query_result:from_cache:690 - Instantiated non-pickable attributes.
+2025-01-24 15:34:50.263 | INFO     | mixtera.utils.utils:deserialize_chunker_index:364 - Deserializing all files in parallel (using 284 cores).
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
+In addition, using fork() with Python in general is a recipe for mysterious
+deadlocks and crashes.
+
+The most likely reason you are seeing this error is because you are using the
+multiprocessing module on Linux, which uses fork() by default. This will be
+fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
+
+See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
+
+  self.pid = os.fork()
+ 4: 2025-01-24,15:34:50 | INFO | Creating Mixtera dataset with 16 data parallel groups.
+ 5: 2025-01-24,15:34:50 | INFO | Creating Mixtera dataset with 16 data parallel groups.
+ 6: 2025-01-24,15:34:50 | INFO | Creating Mixtera dataset with 16 data parallel groups.
+ 7: 2025-01-24,15:34:50 | INFO | Creating Mixtera dataset with 16 data parallel groups.
+12: 2025-01-24,15:34:50 | INFO | Creating Mixtera dataset with 16 data parallel groups.
+15: 2025-01-24,15:34:50 | INFO | Creating Mixtera dataset with 16 data parallel groups.
+13: 2025-01-24,15:34:50 | INFO | Creating Mixtera dataset with 16 data parallel groups.
+14: 2025-01-24,15:34:50 | INFO | Creating Mixtera dataset with 16 data parallel groups.
+ 6: 2025-01-24,15:34:50 | INFO | Mixtera loader initialized, num_samples: 10977280, num_batches: 2680
+ 5: 2025-01-24,15:34:50 | INFO | Mixtera loader initialized, num_samples: 10977280, num_batches: 2680
+ 7: 2025-01-24,15:34:50 | INFO | Mixtera loader initialized, num_samples: 10977280, num_batches: 2680
+ 4: 2025-01-24,15:34:50 | INFO | Mixtera loader initialized, num_samples: 10977280, num_batches: 2680
+15: 2025-01-24,15:34:50 | INFO | Mixtera loader initialized, num_samples: 10977280, num_batches: 2680
+13: 2025-01-24,15:34:50 | INFO | Mixtera loader initialized, num_samples: 10977280, num_batches: 2680
+14: 2025-01-24,15:34:50 | INFO | Mixtera loader initialized, num_samples: 10977280, num_batches: 2680
+12: 2025-01-24,15:34:50 | INFO | Mixtera loader initialized, num_samples: 10977280, num_batches: 2680
+ 4: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
+ 4: In addition, using fork() with Python in general is a recipe for mysterious
+ 4: deadlocks and crashes.
+ 4: 
+ 4: The most likely reason you are seeing this error is because you are using the
+ 4: multiprocessing module on Linux, which uses fork() by default. This will be
+ 4: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
+ 4: 
+ 4: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
+ 4: 
+ 4:   self.pid = os.fork()
+ 6: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
+ 6: In addition, using fork() with Python in general is a recipe for mysterious
+ 6: deadlocks and crashes.
+ 6: 
+ 6: The most likely reason you are seeing this error is because you are using the
+ 6: multiprocessing module on Linux, which uses fork() by default. This will be
+ 6: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
+ 6: 
+ 6: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
+ 6: 
+ 6:   self.pid = os.fork()
+ 5: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
+ 5: In addition, using fork() with Python in general is a recipe for mysterious
+ 5: deadlocks and crashes.
+ 5: 
+ 5: The most likely reason you are seeing this error is because you are using the
+ 5: multiprocessing module on Linux, which uses fork() by default. This will be
+ 5: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
+ 5: 
+ 5: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
+ 5: 
+ 5:   self.pid = os.fork()
+ 7: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
+ 7: In addition, using fork() with Python in general is a recipe for mysterious
+ 7: deadlocks and crashes.
+ 7: 
+ 7: The most likely reason you are seeing this error is because you are using the
+ 7: multiprocessing module on Linux, which uses fork() by default. This will be
+ 7: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
+ 7: 
+ 7: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
+ 7: 
+ 7:   self.pid = os.fork()
+15: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
+15: In addition, using fork() with Python in general is a recipe for mysterious
+15: deadlocks and crashes.
+15: 
+15: The most likely reason you are seeing this error is because you are using the
+15: multiprocessing module on Linux, which uses fork() by default. This will be
+15: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
+15: 
+15: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
+15: 
+15:   self.pid = os.fork()
+13: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
+13: In addition, using fork() with Python in general is a recipe for mysterious
+13: deadlocks and crashes.
+13: 
+13: The most likely reason you are seeing this error is because you are using the
+13: multiprocessing module on Linux, which uses fork() by default. This will be
+13: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
+13: 
+13: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
+13: 
+13:   self.pid = os.fork()
+12: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
+12: In addition, using fork() with Python in general is a recipe for mysterious
+12: deadlocks and crashes.
+12: 
+12: The most likely reason you are seeing this error is because you are using the
+12: multiprocessing module on Linux, which uses fork() by default. This will be
+12: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
+12: 
+12: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
+12: 
+12:   self.pid = os.fork()
+14: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
+14: In addition, using fork() with Python in general is a recipe for mysterious
+14: deadlocks and crashes.
+14: 
+14: The most likely reason you are seeing this error is because you are using the
+14: multiprocessing module on Linux, which uses fork() by default. This will be
+14: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
+14: 
+14: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
+14: 
+14:   self.pid = os.fork()
+10: 2025-01-24,15:34:50 | INFO | Creating Mixtera dataset with 16 data parallel groups.
+ 9: 2025-01-24,15:34:50 | INFO | Creating Mixtera dataset with 16 data parallel groups.
+11: 2025-01-24,15:34:50 | INFO | Creating Mixtera dataset with 16 data parallel groups.
+ 8: 2025-01-24,15:34:50 | INFO | Creating Mixtera dataset with 16 data parallel groups.
+10: 2025-01-24,15:34:50 | INFO | Mixtera loader initialized, num_samples: 10977280, num_batches: 2680
+ 9: 2025-01-24,15:34:50 | INFO | Mixtera loader initialized, num_samples: 10977280, num_batches: 2680
+11: 2025-01-24,15:34:50 | INFO | Mixtera loader initialized, num_samples: 10977280, num_batches: 2680
+ 8: 2025-01-24,15:34:50 | INFO | Mixtera loader initialized, num_samples: 10977280, num_batches: 2680
+10: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
+10: In addition, using fork() with Python in general is a recipe for mysterious
+10: deadlocks and crashes.
+10: 
+10: The most likely reason you are seeing this error is because you are using the
+10: multiprocessing module on Linux, which uses fork() by default. This will be
+10: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
+10: 
+10: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
+10: 
+10:   self.pid = os.fork()
+ 9: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
+ 9: In addition, using fork() with Python in general is a recipe for mysterious
+ 9: deadlocks and crashes.
+ 9: 
+ 9: The most likely reason you are seeing this error is because you are using the
+ 9: multiprocessing module on Linux, which uses fork() by default. This will be
+ 9: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
+ 9: 
+ 9: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
+ 9: 
+ 9:   self.pid = os.fork()
+11: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
+11: In addition, using fork() with Python in general is a recipe for mysterious
+11: deadlocks and crashes.
+11: 
+11: The most likely reason you are seeing this error is because you are using the
+11: multiprocessing module on Linux, which uses fork() by default. This will be
+11: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
+11: 
+11: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
+11: 
+11:   self.pid = os.fork()
+ 8: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
+ 8: In addition, using fork() with Python in general is a recipe for mysterious
+ 8: deadlocks and crashes.
+ 8: 
+ 8: The most likely reason you are seeing this error is because you are using the
+ 8: multiprocessing module on Linux, which uses fork() by default. This will be
+ 8: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
+ 8: 
+ 8: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
+ 8: 
+ 8:   self.pid = os.fork()
+Deserializing Files (using 284 cores):   0%|          | 0/2176 [00:00<?, ?it/s]Deserializing Files (using 284 cores):  54%|█████▎    | 1169/2176 [00:00<00:00, 11685.27it/s]Deserializing Files (using 284 cores): 100%|██████████| 2176/2176 [00:00<00:00, 11459.29it/s]
+Merging loaded results:   0%|          | 0/2176 [00:00<?, ?it/s]Merging loaded results: 100%|██████████| 2176/2176 [00:00<00:00, 1883757.59it/s]
+2025-01-24 15:34:52.133 | DEBUG    | mixtera.core.query.query_result:from_cache:694 - Loaded chunker index.
+2025-01-24 15:34:52.134 | DEBUG    | mixtera.core.query.query_result:_update_key_id_map:110 - Updated key-id-map:
+{dataset:CC12M: 0}
+
+2025-01-24 15:34:52.135 | DEBUG    | mixtera.core.query.chunk_distributor:__init__:53 - [97465/97465] Instantiating ChunkDistributor for job mixtera_openclip_20250124_153407_0
+2025-01-24 15:34:52.135 | INFO     | mixtera.core.client.local.local_stub:_register_query:166 - Registered query select<>([]) for job mixtera_openclip_20250124_153407_0, with mixture {"mixture": "arbitrary_mixture", "chunk_size": 1024}
+2025-01-24 15:34:52.135 | DEBUG    | mixtera.network.server.server:_register_query:77 - Registered query with success = True and executed it.
+ 0: 2025-01-24,15:34:52 | INFO | Mixtera loader initialized, num_samples: 10977280, num_batches: 2680
+2025-01-24 15:34:52.142 | DEBUG    | mixtera.core.query.query_result:_chunk_generator:419 - Obtained new None mixture.
+2025-01-24 15:34:52.142 | DEBUG    | mixtera.core.query.query_result:_persist_mixture_log:119 - Persisting mixture log to disk...
+2025-01-24 15:34:52.144 | DEBUG    | mixtera.core.query.query_result:_persist_mixture_log:132 - Mixture log persisted.
+ 0: wandb: Currently logged in as: tkerimoglu (ethz-easl). Use `wandb login --relogin` to force relogin
+ 0: wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+ 0: wandb: Tracking run with wandb version 0.19.4
+ 0: wandb: Run data is saved locally in /workspace/wandb/run-20250124_153452-2025_01_24-15_34_43-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp
+ 0: wandb: Run `wandb offline` to turn off syncing.
+ 0: wandb: Syncing run 2025_01_24-15_34_43-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp
+ 0: wandb: ⭐️ View project at https://wandb.ai/ethz-easl/open-clip
+ 0: wandb: 🚀 View run at https://wandb.ai/ethz-easl/open-clip/runs/2025_01_24-15_34_43-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp
+ 0: wandb: WARNING Saving files without folders. If you want to preserve subdirectories pass base_path to wandb.save, i.e. wandb.save("/mnt/folder/file.h5", base_path="/mnt")
+ 0: 2025-01-24,15:34:53 | INFO | Start epoch 0
+ 0: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
+ 0: In addition, using fork() with Python in general is a recipe for mysterious
+ 0: deadlocks and crashes.
+ 0: 
+ 0: The most likely reason you are seeing this error is because you are using the
+ 0: multiprocessing module on Linux, which uses fork() by default. This will be
+ 0: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
+ 0: 
+ 0: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
+ 0: 
+ 0:   self.pid = os.fork()
+14: /usr/local/lib/python3.10/dist-packages/PIL/TiffImagePlugin.py:900: UserWarning: Corrupt EXIF data.  Expecting to read 12 bytes but only got 8. 
+14:   warnings.warn(str(msg))
+ 9: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
+ 9:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+10: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
+10:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ 8: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
+ 8:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+11: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
+11:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ 5: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
+ 5:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+15: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
+15:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ 6: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
+ 6:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+14: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
+14:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ 7: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
+ 7:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+13: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
+13:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ 4: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
+ 4:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+12: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
+12:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ 2: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
+ 2:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ 0: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
+ 0:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ 3: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
+ 3:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ 1: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
+ 1:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ 0: 2025-01-24,15:34:58 | INFO | Train Epoch: 0 [    4096/10977280 (0%)] Data (t): 2.352 Batch (t): 4.571, 896.088/s, 56.0055/s/gpu LR: 0.000000 Logit Scale: 14.286 Contrastive_loss: 8.4170 (8.4170) Loss: 8.4170 (8.4170)
+ 0: [rank0]:I0124 15:34:58.736000 98415 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
+ 1: [rank1]:I0124 15:34:58.798000 98416 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
+ 2: [rank2]:I0124 15:34:58.798000 98417 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
+ 3: [rank3]:I0124 15:34:58.798000 98418 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
+ 6: [rank6]:I0124 15:34:58.798000 99295 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
+ 7: [rank7]:I0124 15:34:58.798000 99296 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
+ 5: [rank5]:I0124 15:34:58.798000 99294 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
+ 4: [rank4]:I0124 15:34:58.798000 99293 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
+ 8: [rank8]:I0124 15:34:58.798000 99055 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
+14: [rank14]:I0124 15:34:58.798000 99070 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
+ 9: [rank9]:I0124 15:34:58.798000 99056 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
+11: [rank11]:I0124 15:34:58.798000 99058 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
+15: [rank15]:I0124 15:34:58.798000 99071 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
+10: [rank10]:I0124 15:34:58.798000 99057 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
+13: [rank13]:I0124 15:34:58.798000 99069 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
+12: [rank12]:I0124 15:34:58.798000 99068 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
+13: /usr/local/lib/python3.10/dist-packages/PIL/TiffImagePlugin.py:900: UserWarning: Truncated File Read
+13:   warnings.warn(str(msg))
+15: /usr/local/lib/python3.10/dist-packages/PIL/TiffImagePlugin.py:900: UserWarning: Corrupt EXIF data.  Expecting to read 2 bytes but only got 0. 
+15:   warnings.warn(str(msg))
+ 2: /usr/local/lib/python3.10/dist-packages/PIL/TiffImagePlugin.py:900: UserWarning: Truncated File Read
+ 2:   warnings.warn(str(msg))
+ 9: /usr/local/lib/python3.10/dist-packages/PIL/TiffImagePlugin.py:900: UserWarning: Corrupt EXIF data.  Expecting to read 12 bytes but only got 10. 
+ 9:   warnings.warn(str(msg))
+ 0: 2025-01-24,15:36:06 | INFO | Train Epoch: 0 [  413696/10977280 (4%)] Data (t): 0.309 Batch (t): 0.687, 5881.76/s, 367.610/s/gpu LR: 0.000005 Logit Scale: 14.285 Contrastive_loss: 8.1799 (8.2984) Loss: 8.1799 (8.2984)
+ 3: /usr/local/lib/python3.10/dist-packages/PIL/TiffImagePlugin.py:900: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+ 3:   warnings.warn(str(msg))
+ 3: /usr/local/lib/python3.10/dist-packages/PIL/TiffImagePlugin.py:900: UserWarning: Truncated File Read
+ 3:   warnings.warn(str(msg))
+14: /usr/local/lib/python3.10/dist-packages/PIL/TiffImagePlugin.py:900: UserWarning: Truncated File Read
+14:   warnings.warn(str(msg))
+ 0: 2025-01-24,15:37:12 | INFO | Train Epoch: 0 [  823296/10977280 (8%)] Data (t): 0.295 Batch (t): 0.657, 6206.32/s, 387.895/s/gpu LR: 0.000010 Logit Scale: 14.287 Contrastive_loss: 7.9482 (8.1817) Loss: 7.9482 (8.1817)
+14: /usr/local/lib/python3.10/dist-packages/PIL/TiffImagePlugin.py:900: UserWarning: Corrupt EXIF data.  Expecting to read 2 bytes but only got 0. 
+14:   warnings.warn(str(msg))
+ 8: /usr/local/lib/python3.10/dist-packages/PIL/TiffImagePlugin.py:900: UserWarning: Truncated File Read
+ 8:   warnings.warn(str(msg))

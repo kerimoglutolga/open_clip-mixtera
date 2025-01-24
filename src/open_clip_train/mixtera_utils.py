@@ -7,6 +7,7 @@ import math
 import os
 import sys
 import uuid
+import warnings
 
 from loguru import logger
 import webdataset as wds
@@ -17,6 +18,8 @@ from mixtera.core.query import Query
 from mixtera.core.query.mixture import ArbitraryMixture
 from mixtera.torch import MixteraTorchDataset
 from open_clip_train.distributed import world_info_from_env
+
+warnings.simplefilter("ignore", RuntimeWarning)
 
 logger.remove()
 # logger.add(sys.stderr, level="INFO")

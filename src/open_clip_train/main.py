@@ -425,6 +425,7 @@ def main(args):
 
     # determine if this worker should save logs and checkpoints. only do so if it is rank == 0
     args.save_logs = args.logs and args.logs.lower() != 'none' and is_master(args)
+    print(f"save_logs: {args.save_logs}")
     writer = None
     if args.save_logs and args.tensorboard:
         assert tensorboard is not None, "Please install tensorboard."
@@ -487,7 +488,8 @@ def main(args):
             evaluate(model, data, completed_epoch, args, tb_writer=writer, tokenizer=tokenizer)
 
         # Saving checkpoints.
-        if args.save_logs:
+        if is_master(args):
+            print(f"Saving logs to {log_base_path}")
             checkpoint_dict = {
                 "epoch": completed_epoch,
                 "name": args.name,
@@ -499,7 +501,8 @@ def main(args):
 
             if completed_epoch == args.epochs or (
                 args.save_frequency > 0 and (completed_epoch % args.save_frequency) == 0
-            ):
+            ):  
+                print(f"Saving checkpoint to {args.checkpoint_path}")
                 torch.save(
                     checkpoint_dict,
                     os.path.join(args.checkpoint_path, f"epoch_{completed_epoch}.pt"),

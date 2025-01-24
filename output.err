@@ -1,288 +1,192 @@
-2025-01-24 14:22:51.969 | INFO     | __main__:main:46 - Starting server, serving from directory /iopsstor/scratch/cscs/tkerimog/open_clip/mixtera_server
-2025-01-24 14:22:51.971 | DEBUG    | mixtera.core.client.mixtera_client:__init__:138 - Initialized current mixture id to -1.
-2025-01-24 14:22:51.972 | INFO     | mixtera.core.datacollection.mixtera_data_collection:_load_db_from_disk:76 - Loading database from /iopsstor/scratch/cscs/tkerimog/open_clip/mixtera_server/mixtera.duckdb
-2025-01-24 14:22:51.997 | INFO     | mixtera.core.datacollection.mixtera_data_collection:_load_db_from_disk:78 - Database loaded.
-2025-01-24 14:22:52.010 | INFO     | mixtera.core.datacollection.mixtera_data_collection:_vacuum:123 - Vacuuming the DuckDB.
-2025-01-24 14:22:52.011 | INFO     | mixtera.core.datacollection.mixtera_data_collection:_vacuum:125 - Vacuumd.
-2025-01-24 14:22:52.011 | DEBUG    | mixtera.core.query.query_cache:__init__:18 - Initializing QueryCache at /iopsstor/scratch/cscs/tkerimog/open_clip/mixtera_server/querycache
-2025-01-24 14:22:52.021 | INFO     | mixtera.network.server.server:_run_async:377 - Serving MixteraServer on ('172.28.20.248', 12345)
- 0: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
- 0: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
- 0: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
- 0: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
- 0: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
- 8: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
-12: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
- 8: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
-12: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
- 8: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
-12: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
- 8: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
-12: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
- 8: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
-12: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
- 4: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
- 4: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
- 4: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
- 4: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
- 4: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
- 0: 2025-01-24,14:23:30 | INFO | Running in distributed mode with multiple processes. Device: cuda:0.Process (global: 0, local 0), total 16.
- 0: 2025-01-24,14:23:30 | INFO | Loaded ViT-B-32 model config.
-14: 2025-01-24,14:23:30 | INFO | Running in distributed mode with multiple processes. Device: cuda:2.Process (global: 14, local 2), total 16.
-13: 2025-01-24,14:23:30 | INFO | Running in distributed mode with multiple processes. Device: cuda:1.Process (global: 13, local 1), total 16.
-12: 2025-01-24,14:23:30 | INFO | Running in distributed mode with multiple processes. Device: cuda:0.Process (global: 12, local 0), total 16.
-15: 2025-01-24,14:23:30 | INFO | Running in distributed mode with multiple processes. Device: cuda:3.Process (global: 15, local 3), total 16.
-13: 2025-01-24,14:23:30 | INFO | Loaded ViT-B-32 model config.
-14: 2025-01-24,14:23:30 | INFO | Loaded ViT-B-32 model config.
-15: 2025-01-24,14:23:30 | INFO | Loaded ViT-B-32 model config.
-12: 2025-01-24,14:23:30 | INFO | Loaded ViT-B-32 model config.
- 1: 2025-01-24,14:23:30 | INFO | Running in distributed mode with multiple processes. Device: cuda:1.Process (global: 1, local 1), total 16.
- 3: 2025-01-24,14:23:30 | INFO | Running in distributed mode with multiple processes. Device: cuda:3.Process (global: 3, local 3), total 16.
- 2: 2025-01-24,14:23:30 | INFO | Running in distributed mode with multiple processes. Device: cuda:2.Process (global: 2, local 2), total 16.
- 1: 2025-01-24,14:23:30 | INFO | Loaded ViT-B-32 model config.
- 3: 2025-01-24,14:23:30 | INFO | Loaded ViT-B-32 model config.
- 2: 2025-01-24,14:23:30 | INFO | Loaded ViT-B-32 model config.
-11: 2025-01-24,14:23:30 | INFO | Running in distributed mode with multiple processes. Device: cuda:3.Process (global: 11, local 3), total 16.
-10: 2025-01-24,14:23:30 | INFO | Running in distributed mode with multiple processes. Device: cuda:2.Process (global: 10, local 2), total 16.
- 9: 2025-01-24,14:23:30 | INFO | Running in distributed mode with multiple processes. Device: cuda:1.Process (global: 9, local 1), total 16.
- 7: 2025-01-24,14:23:30 | INFO | Running in distributed mode with multiple processes. Device: cuda:3.Process (global: 7, local 3), total 16.
- 8: 2025-01-24,14:23:30 | INFO | Running in distributed mode with multiple processes. Device: cuda:0.Process (global: 8, local 0), total 16.
- 5: 2025-01-24,14:23:30 | INFO | Running in distributed mode with multiple processes. Device: cuda:1.Process (global: 5, local 1), total 16.
- 4: 2025-01-24,14:23:30 | INFO | Running in distributed mode with multiple processes. Device: cuda:0.Process (global: 4, local 0), total 16.
- 6: 2025-01-24,14:23:30 | INFO | Running in distributed mode with multiple processes. Device: cuda:2.Process (global: 6, local 2), total 16.
-11: 2025-01-24,14:23:30 | INFO | Loaded ViT-B-32 model config.
-10: 2025-01-24,14:23:30 | INFO | Loaded ViT-B-32 model config.
- 9: 2025-01-24,14:23:30 | INFO | Loaded ViT-B-32 model config.
- 8: 2025-01-24,14:23:30 | INFO | Loaded ViT-B-32 model config.
- 5: 2025-01-24,14:23:30 | INFO | Loaded ViT-B-32 model config.
- 7: 2025-01-24,14:23:30 | INFO | Loaded ViT-B-32 model config.
- 6: 2025-01-24,14:23:30 | INFO | Loaded ViT-B-32 model config.
- 4: 2025-01-24,14:23:30 | INFO | Loaded ViT-B-32 model config.
- 0: 2025-01-24,14:23:31 | INFO | Model:
- 0: 2025-01-24,14:23:31 | INFO | CLIP(
- 0:   (visual): VisionTransformer(
- 0:     (conv1): Conv2d(3, 768, kernel_size=(32, 32), stride=(32, 32), bias=False)
- 0:     (patch_dropout): Identity()
- 0:     (ln_pre): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
- 0:     (transformer): Transformer(
- 0:       (resblocks): ModuleList(
- 0:         (0-11): 12 x ResidualAttentionBlock(
- 0:           (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
- 0:           (attn): MultiheadAttention(
- 0:             (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
- 0:           )
- 0:           (ls_1): Identity()
- 0:           (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
- 0:           (mlp): Sequential(
- 0:             (c_fc): Linear(in_features=768, out_features=3072, bias=True)
- 0:             (gelu): GELU(approximate='none')
- 0:             (c_proj): Linear(in_features=3072, out_features=768, bias=True)
- 0:           )
- 0:           (ls_2): Identity()
- 0:         )
- 0:       )
- 0:     )
- 0:     (ln_post): LayerNorm((768,), eps=1e-05, elementwise_a
- 0: ffine=True)
- 0:   )
- 0:   (transformer): Transformer(
- 0:     (resblocks): ModuleList(
- 0:       (0-11): 12 x ResidualAttentionBlock(
- 0:         (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
- 0:         (attn): MultiheadAttention(
- 0:           (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
- 0:         )
- 0:         (ls_1): Identity()
- 0:         (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
- 0:         (mlp): Sequential(
- 0:           (c_fc): Linear(in_features=512, out_features=2048, bias=True)
- 0:           (gelu): GELU(approximate='none')
- 0:           (c_proj): Linear(in_features=2048, out_features=512, bias=True)
- 0:         )
- 0:         (ls_2): Identity()
- 0:       )
- 0:     )
- 0:   )
- 0:   (token_embedding): Embedding(49408, 512)
- 0:   (ln_final): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
- 0: )
- 0: 2025-01-24,14:23:31 | INFO | Params:
- 0: 2025-01-24,14:23:31 | INFO |   accum_freq: 1
- 0: 2025-01-24,14:23:31 | INFO |   aug_cfg: {}
- 0: 2025-01-24,14:23:31 | INFO |   batch_size: 256
- 0: 2025-01-24,14:23:31 | INFO |   beta1: 0.9
- 0: 2025-01-24,14:23:31 | INFO |   beta2: 0.98
- 0: 2025-01-24,14:23:31 | INFO |   cache_dir: None
- 0: 2025-01-24,14:23:31 | INFO |   checkpoint_path: ./logs/2025_01_24-14_23_24-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp/checkpoints
- 0: 2025-01-24,14:23:31 | INFO |   coca_caption_loss_weight: 2.0
- 0: 2025-01-24,14:23:31 | INFO |   coca_contrastive_loss_weight: 1.0
- 0: 2025-01-24,14:23:31 | INFO |   copy_codebase: False
- 0: 2025-01-24,14:23:31 | INFO |   csv_caption_key: title
- 0: 2025-01-24,14:23:31 | INFO |   csv_img_key: filepath
- 0: 2025-01-24,14:23:31 | INFO |   csv_separator: 	
- 0: 2025-01-24,14:23:31 | INFO |   dataset_resampled: False
- 0: 2025-01-24,14:23:31 | INFO |   dataset_type: mixtera_webdataset
- 0: 2025-01-24,14:23:31 | INFO |   ddp_static_graph: False
- 0: 2025-01-24,14:23:31 | INFO |   debug: False
- 0: 2025-01-24,14:23:31 | INFO |   delete_previous_checkpoint: False
- 0: 2025-01-24,14:23:31 | INFO |   device: cuda:0
- 0: 2025-01-24,14:23:31 | INFO |   dist_backend: None
- 0: 2025-01-24,14:23:31 | INFO |   dist_url: None
- 0: 2025-01-24,14:23:31 | INFO |   distill: False
- 0: 2025-01-24,14:23:31 | INFO |   distill_model: None
- 0: 2025-01-24,14:23:31 | INFO |   distill_pretrained: None
- 0: 2025-01-24,14:23:31 | INFO |   distributed: True
- 0: 2025-01-24,14:23:31 | INFO |   epochs: 1
- 0: 2025-01-24,14:23:31 | INFO |   epochs_cooldown: None
- 0: 2025-01-24,14:23:31 | INFO |   eps: 1e-06
- 0: 2025-01-24,14:23:31 | INFO |   force_custom_text: False
- 0: 2025-01-24,14:23:31 | INFO |   force_image_size: None
- 0: 2025-01-24,14:23:31 | INFO |   force_patch_dropout: None
- 0: 2025-01-24,14:23:31 | INFO |   force_quick_gelu: False
- 0: 2025-01-24,14:23:31 | INFO |   gather_with_grad: True
- 0: 2025-01-24,14:23:31 | INFO |   grad_checkpointing: False
- 0: 2025-01-24,14:23:31 | INFO |   grad_clip_norm: None
- 0: 2025-01-24,14:23:31 | INFO |   horovod: False
- 0: 2025-01-24,14:23:31 | INFO |   image_interpolation: None
- 0: 2025-01-24,14:23:31 | INFO |   image_mean: None
- 0: 2025-01-24,14:23:31 | INFO |   image_resize_mode: None
- 0: 2025-01-24,14:23:31 | INFO |   image_std: None
- 0: 2025-01-24,14:23:31 | INFO |   imagenet_v2: None
- 0: 2025-01-24,14:23:31 | INFO |   imagenet_val: None
- 0: 2025-01-24,14:23:31 | INFO |   local_loss: True
- 0: 2025-01-24,14:23:31 | INFO |   local_rank: 0
- 0: 2025-01-24,14:23:31 | INFO |   lock_image: False
- 0: 2025-01-24,14:23:31 | INFO |   lock_image_freeze_bn_stats: False
- 0: 2025-01-24,14:23:31 | INFO |   lock_image_unlocked_groups: 0
- 0: 2025-01-24,14:23:31 | INFO |   lock_text: False
- 0: 2025-01-24,14:23:31 | INFO |   lock_text_freeze_layer_norm: False
- 0: 2025-01-24,14:23:31 | INFO |   lock_text_unlocked_layers: 0
- 0: 2025-01-24,14:23:31 | INFO |   log_every_n_steps: 100
- 0: 2025-01-24,14:23:31 | INFO |   log_level: 20
- 0: 2025-01-24,14:23:31 | INFO |   log_local: False
- 0: 2025-01-24,14:23:31 | INFO |   log_path: ./logs/2025_01_24-14_23_24-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp/out.log
- 0: 2025-01-24,14:23:31 | INFO |   logs: ./logs/
- 0: 2025-01-24,14:23:31 | INFO |   loss_dist_impl: None
- 0: 2025-01-24,14:23:31 | INFO |   lr: 0.0005
- 0: 2025-01-24,14:23:31 | INFO |   lr_cooldown_end: 0.0
- 0: 2025-01-24,14:23:31 | INFO |   lr_cooldown_power: 1.0
- 0: 2025-01-24,14:23:31 | INFO |   lr_scheduler: cosine
- 0: 2025-01-24,14:23:31 | INFO |   model: ViT-B-32
- 0: 2025-01-24,14:23:31 | INFO |   momentum: None
- 0: 2025-01-24,14:23:31 | INFO |   name: 2025_01_24-14_23_24-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp
- 0: 2025-01-24,14:23:31 | INFO |   no_set_device_rank: False
- 0: 2025-01-24,14:23:31 | INFO |   opt: adamw
- 0: 2025-01-24,14:23:31 | INFO |   precision: amp
- 0: 2025-01-24,14:23:31 | INFO |   pretrained: 
- 0: 2025-01-24,14:23:31 | INFO |   pretrained_image: False
- 0: 2025-01-24,14:23:31 | INFO |   rank: 0
- 0: 2025-01-24,14:23:31 | INFO |   remote_sync: None
- 0: 2025-01-24,14:23:31 | INFO |   remote_sync_frequency: 300
- 0: 2025-01-24,14:23:31 | INFO |   remote_sync_protocol: s3
- 0: 2025-01-24,14:23:31 | INFO |   report_to: wandb
- 0: 2025-01-24,14:23:31 | INFO |   resume: None
- 0: 2025-01-24,14:23:31 | INFO |   save_frequency: 1
- 0: 2025-01-24,14:23:31 | INFO |   save_most_recent: False
- 0: 2025-01-24,14:23:31 | INFO |   seed: 0
- 0: 2025-01-24,14:23:31 | INFO |   siglip: False
- 0: 2025-01-24,14:23:31 | INFO |   skip_scheduler: False
- 0: 2025-01-24,14:23:31 | INFO |   tensorboard: False
- 0: 2025-01-24,14:23:31 | INFO |   tensorboard_path: 
- 0: 2025-01-24,14:23:31 | INFO |   torchcompile: False
- 0: 2025-01-24,14:23:31 | INFO |   torchscript: False
- 0: 2025-01-24,14:23:31 | INFO |   trace: False
- 0: 2025-01-24,14:23:31 | INFO |   train_data: /iopsstor/scratch/cscs/tkerimog/datasets/cc12m-wds/cc12m-train-{0000..2175}.tar
- 0: 2025-01-24,14:23:31 | INFO |   train_data_upsampling_factors: None
- 0: 2025-01-24,14:23:31 | INFO |   train_num_samples: 100000
- 0: 2025-01-24,14:23:31 | INFO |   use_bn_sync: False
- 0: 2025-01-24,14:23:31 | INFO |   use_bnb_linear: None
- 0: 2025-01-24,14:23:31 | INFO |   val_data: None
- 0: 2025-01-24,14:23:31 | INFO |   val_frequency: 1
- 0: 2025-01-24,14:23:31 | INFO |   val_num_samples: None
- 0: 2025-01-24,14:23:31 | INFO |   wandb: True
- 0: 2025-01-24,14:23:31 | INFO |   wandb_notes: 
- 0: 2025-01-24,14:23:31 | INFO |   wandb_project_name: open-clip
- 0: 2025-01-24,14:23:31 | INFO |   warmup: 10000
- 0: 2025-01-24,14:23:31 | INFO |   wd: 0.2
- 0: 2025-01-24,14:23:31 | INFO |   workers: 4
- 0: 2025-01-24,14:23:31 | INFO |   world_size: 16
- 0: 2025-01-24,14:23:31 | INFO |   zeroshot_frequency: 2
- 0: 2025-01-24,14:23:31 | INFO | Created AdamW (adamw) optimizer: lr: 0.0005, betas: (0.9, 0.98), eps: 1e-06, weight_decay: 0.2, amsgrad: False, foreach: None, maximize: False, capturable: False, differentiable: False, fused: None
- 0: 2025-01-24 14:23:31.834 | DEBUG    | mixtera.core.client.mixtera_client:__init__:138 - Initialized current mixture id to -1.
- 3: 2025-01-24 14:23:31.834 | DEBUG    | mixtera.core.client.mixtera_client:__init__:138 - Initialized current mixture id to -1.
- 0: 2025-01-24,14:23:31 | INFO | Creating Mixtera dataset with 4 data parallel groups.
- 2: 2025-01-24 14:23:31.834 | DEBUG    | mixtera.core.client.mixtera_client:__init__:138 - Initialized current mixture id to -1.
- 3: 2025-01-24,14:23:31 | INFO | Creating Mixtera dataset with 4 data parallel groups.
- 1: 2025-01-24 14:23:31.834 | DEBUG    | mixtera.core.client.mixtera_client:__init__:138 - Initialized current mixture id to -1.
- 2: 2025-01-24,14:23:31 | INFO | Creating Mixtera dataset with 4 data parallel groups.
- 1: 2025-01-24,14:23:31 | INFO | Creating Mixtera dataset with 4 data parallel groups.
- 3: 2025-01-24 14:23:31.836 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_init_status_shm:163 - [Process 92839] Created shared memory objects for 4 workers
- 0: 2025-01-24 14:23:31.836 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_init_status_shm:163 - [Process 92836] Created shared memory objects for 4 workers
- 1: 2025-01-24 14:23:31.836 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_init_status_shm:163 - [Process 92837] Created shared memory objects for 4 workers
- 2: 2025-01-24 14:23:31.836 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_init_status_shm:163 - [Process 92838] Created shared memory objects for 4 workers
- 0: 2025-01-24 14:23:31.836 | INFO     | mixtera.torch.mixtera_torch_dataset:__init__:85 - [92836/92836] Since this is node 0 in data parallel group 0, executing query!
- 2: 2025-01-24,14:23:31 | INFO | Mixtera loader initialized, num_samples: 114688, num_batches: 28
- 1: 2025-01-24,14:23:31 | INFO | Mixtera loader initialized, num_samples: 114688, num_batches: 28
- 3: 2025-01-24,14:23:31 | INFO | Mixtera loader initialized, num_samples: 114688, num_batches: 28
- 2: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
- 2: In addition, using fork() with Python in general is a recipe for mysterious
- 2: deadlocks and crashes.
- 2: 
- 2: The most likely reason you are seeing this error is because you are using the
- 2: multiprocessing module on Linux, which uses fork() by default. This will be
- 2: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
- 2: 
- 2: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
- 2: 
- 2:   self.pid = os.fork()
- 3: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
- 3: In addition, using fork() with Python in general is a recipe for mysterious
- 3: deadlocks and crashes.
- 3: 
- 3: The most likely reason you are seeing this error is because you are using the
- 3: multiprocessing module on Linux, which uses fork() by default. This will be
- 3: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
- 3: 
- 3: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
- 3: 
- 3:   self.pid = os.fork()
- 0: ┬ T4: <class 'mixtera.core.query.mixture.arbitrary_mixture.ArbitraryMixture'>
- 1: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
- 1: In addition, using fork() with Python in general is a recipe for mysterious
- 1: deadlocks and crashes.
- 1: 
- 1: The most likely reason you are seeing this error is because you are using the
- 1: multiprocessing module on Linux, which uses fork() by default. This will be
- 1: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
- 1: 
- 1: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
- 1: 
- 1:   self.pid = os.fork()
- 0: └ # T4 [68 B]
- 0: ┬ D2: <dict object at 0x4005f84db740>
- 0: └ # D2 [37 B]
-2025-01-24 14:23:31.843 | DEBUG    | mixtera.network.server.server:_register_query:61 - Received register query request
- 0: ┬ T4: <class 'mixtera.core.query.query.Query'>
- 0: └ # T4 [37 B]
- 0: ┬ D2: <dict object at 0x4005f84db400>
- 0: ├┬ T4: <class 'mixtera.core.query.query_plan.QueryPlan'>
- 0: │└ # T4 [46 B]
- 0: ├┬ D2: <dict object at 0x40021569fd80>
-2025-01-24 14:23:31.843 | DEBUG    | mixtera.network.server.server:_register_query:63 - mixture = {"mixture": "arbitrary_mixture", "chunk_size": 1024}
- 0: │├┬ T4: <class 'mixtera.core.query.operators.select.Select'>
- 0: ││└ # T4 [49 B]
- 0: │├┬ D2: <dict object at 0x4005f84db840>
- 0: ││└ # D2 [32 B]
- 0: │└ # D2 [95 B]
- 0: └ # D2 [217 B]
-2025-01-24 14:23:31.843 | DEBUG    | mixtera.network.server.server:_register_query:74 - Received query = select<>([]). Executing it.
-2025-01-24 14:23:31.853 | DEBUG    | mixtera.core.query.query_cache:get_queryresults_if_cached:97 - Returning results from cache!
-2025-01-24 14:23:31.853 | INFO     | mixtera.core.query.query_result:from_cache:655 - Loading QueryResult from cache.
-2025-01-24 14:23:31.854 | DEBUG    | mixtera.core.query.query_result:from_cache:661 - Loaded pickable attributes.
-2025-01-24 14:23:31.856 | DEBUG    | mixtera.core.query.query_result:from_cache:667 - Loaded dillable attributes.
-2025-01-24 14:23:31.857 | DEBUG    | mixtera.core.query.query_result:from_cache:679 - Instantiated QueryResult from pickle/dill.
-2025-01-24 14:23:31.857 | DEBUG    | mixtera.core.query.query_result:from_cache:690 - Instantiated non-pickable attributes.
-2025-01-24 14:23:31.865 | INFO     | mixtera.utils.utils:deserialize_chunker_index:364 - Deserializing all files in parallel (using 284 cores).
+2025-01-24 14:47:34.743 | INFO     | __main__:main:46 - Starting server, serving from directory /iopsstor/scratch/cscs/tkerimog/open_clip/mixtera_server
+2025-01-24 14:47:34.745 | DEBUG    | mixtera.core.client.mixtera_client:__init__:138 - Initialized current mixture id to -1.
+2025-01-24 14:47:34.746 | INFO     | mixtera.core.datacollection.mixtera_data_collection:_load_db_from_disk:76 - Loading database from /iopsstor/scratch/cscs/tkerimog/open_clip/mixtera_server/mixtera.duckdb
+2025-01-24 14:47:34.769 | INFO     | mixtera.core.datacollection.mixtera_data_collection:_load_db_from_disk:78 - Database loaded.
+2025-01-24 14:47:34.782 | INFO     | mixtera.core.datacollection.mixtera_data_collection:_vacuum:123 - Vacuuming the DuckDB.
+2025-01-24 14:47:34.783 | INFO     | mixtera.core.datacollection.mixtera_data_collection:_vacuum:125 - Vacuumd.
+2025-01-24 14:47:34.783 | DEBUG    | mixtera.core.query.query_cache:__init__:18 - Initializing QueryCache at /iopsstor/scratch/cscs/tkerimog/open_clip/mixtera_server/querycache
+2025-01-24 14:47:34.793 | INFO     | mixtera.network.server.server:_run_async:377 - Serving MixteraServer on ('172.28.11.220', 12345)
+0: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+0: slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+0: 2025-01-24,14:47:58 | INFO | Running with a single process. Device cuda.
+0: 2025-01-24,14:47:58 | INFO | Loaded ViT-B-32 model config.
+0: 2025-01-24,14:48:00 | INFO | Model:
+0: 2025-01-24,14:48:00 | INFO | CLIP(
+0:   (visual): VisionTransformer(
+0:     (conv1): Conv2d(3, 768, kernel_size=(32, 32), stride=(32, 32), bias=False)
+0:     (patch_dropout): Identity()
+0:     (ln_pre): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+0:     (transformer): Transformer(
+0:       (resblocks): ModuleList(
+0:         (0-11): 12 x ResidualAttentionBlock(
+0:           (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+0:           (attn): MultiheadAttention(
+0:             (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+0:           )
+0:           (ls_1): Identity()
+0:           (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+0:           (mlp): Sequential(
+0:             (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+0:             (gelu): GELU(approximate='none')
+0:             (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+0:           )
+0:           (ls_2): Identity()
+0:         )
+0:       )
+0:     )
+0:     (ln_post): LayerNorm((768,), eps=1e-05, elementwise_a
+0: ffine=True)
+0:   )
+0:   (transformer): Transformer(
+0:     (resblocks): ModuleList(
+0:       (0-11): 12 x ResidualAttentionBlock(
+0:         (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+0:         (attn): MultiheadAttention(
+0:           (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+0:         )
+0:         (ls_1): Identity()
+0:         (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+0:         (mlp): Sequential(
+0:           (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+0:           (gelu): GELU(approximate='none')
+0:           (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+0:         )
+0:         (ls_2): Identity()
+0:       )
+0:     )
+0:   )
+0:   (token_embedding): Embedding(49408, 512)
+0:   (ln_final): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+0: )
+0: 2025-01-24,14:48:00 | INFO | Params:
+0: 2025-01-24,14:48:00 | INFO |   accum_freq: 1
+0: 2025-01-24,14:48:00 | INFO |   aug_cfg: {}
+0: 2025-01-24,14:48:00 | INFO |   batch_size: 256
+0: 2025-01-24,14:48:00 | INFO |   beta1: 0.9
+0: 2025-01-24,14:48:00 | INFO |   beta2: 0.98
+0: 2025-01-24,14:48:00 | INFO |   cache_dir: None
+0: 2025-01-24,14:48:00 | INFO |   checkpoint_path: ./logs/2025_01_24-14_47_58-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp/checkpoints
+0: 2025-01-24,14:48:00 | INFO |   coca_caption_loss_weight: 2.0
+0: 2025-01-24,14:48:00 | INFO |   coca_contrastive_loss_weight: 1.0
+0: 2025-01-24,14:48:00 | INFO |   copy_codebase: False
+0: 2025-01-24,14:48:00 | INFO |   csv_caption_key: title
+0: 2025-01-24,14:48:00 | INFO |   csv_img_key: filepath
+0: 2025-01-24,14:48:00 | INFO |   csv_separator: 	
+0: 2025-01-24,14:48:00 | INFO |   dataset_resampled: False
+0: 2025-01-24,14:48:00 | INFO |   dataset_type: mixtera_webdataset
+0: 2025-01-24,14:48:00 | INFO |   ddp_static_graph: False
+0: 2025-01-24,14:48:00 | INFO |   debug: False
+0: 2025-01-24,14:48:00 | INFO |   delete_previous_checkpoint: False
+0: 2025-01-24,14:48:00 | INFO |   device: cuda
+0: 2025-01-24,14:48:00 | INFO |   dist_backend: None
+0: 2025-01-24,14:48:00 | INFO |   dist_url: None
+0: 2025-01-24,14:48:00 | INFO |   distill: False
+0: 2025-01-24,14:48:00 | INFO |   distill_model: None
+0: 2025-01-24,14:48:00 | INFO |   distill_pretrained: None
+0: 2025-01-24,14:48:00 | INFO |   distributed: False
+0: 2025-01-24,14:48:00 | INFO |   epochs: 5
+0: 2025-01-24,14:48:00 | INFO |   epochs_cooldown: None
+0: 2025-01-24,14:48:00 | INFO |   eps: 1e-06
+0: 2025-01-24,14:48:00 | INFO |   force_custom_text: False
+0: 2025-01-24,14:48:00 | INFO |   force_image_size: None
+0: 2025-01-24,14:48:00 | INFO |   force_patch_dropout: None
+0: 2025-01-24,14:48:00 | INFO |   force_quick_gelu: False
+0: 2025-01-24,14:48:00 | INFO |   gather_with_grad: True
+0: 2025-01-24,14:48:00 | INFO |   grad_checkpointing: False
+0: 2025-01-24,14:48:00 | INFO |   grad_clip_norm: None
+0: 2025-01-24,14:48:00 | INFO |   horovod: False
+0: 2025-01-24,14:48:00 | INFO |   image_interpolation: None
+0: 2025-01-24,14:48:00 | INFO |   image_mean: None
+0: 2025-01-24,14:48:00 | INFO |   image_resize_mode: None
+0: 2025-01-24,14:48:00 | INFO |   image_std: None
+0: 2025-01-24,14:48:00 | INFO |   imagenet_v2: None
+0: 2025-01-24,14:48:00 | INFO |   imagenet_val: None
+0: 2025-01-24,14:48:00 | INFO |   local_loss: True
+0: 2025-01-24,14:48:00 | INFO |   local_rank: 0
+0: 2025-01-24,14:48:00 | INFO |   lock_image: False
+0: 2025-01-24,14:48:00 | INFO |   lock_image_freeze_bn_stats: False
+0: 2025-01-24,14:48:00 | INFO |   lock_image_unlocked_groups: 0
+0: 2025-01-24,14:48:00 | INFO |   lock_text: False
+0: 2025-01-24,14:48:00 | INFO |   lock_text_freeze_layer_norm: False
+0: 2025-01-24,14:48:00 | INFO |   lock_text_unlocked_layers: 0
+0: 2025-01-24,14:48:00 | INFO |   log_every_n_steps: 100
+0: 2025-01-24,14:48:00 | INFO |   log_level: 20
+0: 2025-01-24,14:48:00 | INFO |   log_local: False
+0: 2025-01-24,14:48:00 | INFO |   log_path: ./logs/2025_01_24-14_47_58-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp/out.log
+0: 2025-01-24,14:48:00 | INFO |   logs: ./logs/
+0: 2025-01-24,14:48:00 | INFO |   loss_dist_impl: None
+0: 2025-01-24,14:48:00 | INFO |   lr: 0.0005
+0: 2025-01-24,14:48:00 | INFO |   lr_cooldown_end: 0.0
+0: 2025-01-24,14:48:00 | INFO |   lr_cooldown_power: 1.0
+0: 2025-01-24,14:48:00 | INFO |   lr_scheduler: cosine
+0: 2025-01-24,14:48:00 | INFO |   model: ViT-B-32
+0: 2025-01-24,14:48:00 | INFO |   momentum: None
+0: 2025-01-24,14:48:00 | INFO |   name: 2025_01_24-14_47_58-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp
+0: 2025-01-24,14:48:00 | INFO |   no_set_device_rank: False
+0: 2025-01-24,14:48:00 | INFO |   opt: adamw
+0: 2025-01-24,14:48:00 | INFO |   precision: amp
+0: 2025-01-24,14:48:00 | INFO |   pretrained: 
+0: 2025-01-24,14:48:00 | INFO |   pretrained_image: False
+0: 2025-01-24,14:48:00 | INFO |   rank: 0
+0: 2025-01-24,14:48:00 | INFO |   remote_sync: None
+0: 2025-01-24,14:48:00 | INFO |   remote_sync_frequency: 300
+0: 2025-01-24,14:48:00 | INFO |   remote_sync_protocol: s3
+0: 2025-01-24,14:48:00 | INFO |   report_to: wandb
+0: 2025-01-24,14:48:00 | INFO |   resume: None
+0: 2025-01-24,14:48:00 | INFO |   save_frequency: 1
+0: 2025-01-24,14:48:00 | INFO |   save_most_recent: False
+0: 2025-01-24,14:48:00 | INFO |   seed: 0
+0: 2025-01-24,14:48:00 | INFO |   siglip: False
+0: 2025-01-24,14:48:00 | INFO |   skip_scheduler: False
+0: 2025-01-24,14:48:00 | INFO |   tensorboard: False
+0: 2025-01-24,14:48:00 | INFO |   tensorboard_path: 
+0: 2025-01-24,14:48:00 | INFO |   torchcompile: False
+0: 2025-01-24,14:48:00 | INFO |   torchscript: False
+0: 2025-01-24,14:48:00 | INFO |   trace: False
+0: 2025-01-24,14:48:00 | INFO |   train_data: /iopsstor/scratch/cscs/tkerimog/datasets/cc12m-wds/cc12m-train-{0000..2175}.tar
+0: 2025-01-24,14:48:00 | INFO |   train_data_upsampling_factors: None
+0: 2025-01-24,14:48:00 | INFO |   train_num_samples: 100000
+0: 2025-01-24,14:48:00 | INFO |   use_bn_sync: False
+0: 2025-01-24,14:48:00 | INFO |   use_bnb_linear: None
+0: 2025-01-24,14:48:00 | INFO |   val_data: None
+0: 2025-01-24,14:48:00 | INFO |   val_frequency: 1
+0: 2025-01-24,14:48:00 | INFO |   val_num_samples: None
+0: 2025-01-24,14:48:00 | INFO |   wandb: True
+0: 2025-01-24,14:48:00 | INFO |   wandb_notes: 
+0: 2025-01-24,14:48:00 | INFO |   wandb_project_name: open-clip
+0: 2025-01-24,14:48:00 | INFO |   warmup: 10000
+0: 2025-01-24,14:48:00 | INFO |   wd: 0.2
+0: 2025-01-24,14:48:00 | INFO |   workers: 4
+0: 2025-01-24,14:48:00 | INFO |   world_size: 1
+0: 2025-01-24,14:48:00 | INFO |   zeroshot_frequency: 2
+0: 2025-01-24,14:48:00 | INFO | Created AdamW (adamw) optimizer: lr: 0.0005, betas: (0.9, 0.98), eps: 1e-06, weight_decay: 0.2, amsgrad: False, foreach: None, maximize: False, capturable: False, differentiable: False, fused: None
+0: 2025-01-24,14:48:00 | INFO | Creating Mixtera dataset with 1 data parallel groups.
+0: ┬ T4: <class 'mixtera.core.query.mixture.arbitrary_mixture.ArbitraryMixture'>
+0: └ # T4 [68 B]
+0: ┬ D2: <dict object at 0x4004a23773c0>
+0: └ # D2 [37 B]
+0: ┬ T4: <class 'mixtera.core.query.query.Query'>
+2025-01-24 14:48:00.768 | DEBUG    | mixtera.network.server.server:_register_query:61 - Received register query request
+0: └ # T4 [37 B]
+0: ┬ D2: <dict object at 0x4004a2377440>
+0: ├┬ T4: <class 'mixtera.core.query.query_plan.QueryPlan'>
+0: │└ # T4 [46 B]
+0: ├┬ D2: <dict object at 0x40021d17fcc0>
+0: │├┬ T4: <class 'mixtera.core.query.operators.select.Select'>
+2025-01-24 14:48:00.768 | DEBUG    | mixtera.network.server.server:_register_query:63 - mixture = {"mixture": "arbitrary_mixture", "chunk_size": 1024}
+0: ││└ # T4 [49 B]
+0: │├┬ D2: <dict object at 0x4004a2377480>
+0: ││└ # D2 [32 B]
+0: │└ # D2 [95 B]
+0: └ # D2 [217 B]
+2025-01-24 14:48:00.768 | DEBUG    | mixtera.network.server.server:_register_query:74 - Received query = select<>([]). Executing it.
+2025-01-24 14:48:00.779 | DEBUG    | mixtera.core.query.query_cache:get_queryresults_if_cached:97 - Returning results from cache!
+2025-01-24 14:48:00.779 | INFO     | mixtera.core.query.query_result:from_cache:655 - Loading QueryResult from cache.
+2025-01-24 14:48:00.780 | DEBUG    | mixtera.core.query.query_result:from_cache:661 - Loaded pickable attributes.
+2025-01-24 14:48:00.782 | DEBUG    | mixtera.core.query.query_result:from_cache:667 - Loaded dillable attributes.
+2025-01-24 14:48:00.782 | DEBUG    | mixtera.core.query.query_result:from_cache:679 - Instantiated QueryResult from pickle/dill.
+2025-01-24 14:48:00.783 | DEBUG    | mixtera.core.query.query_result:from_cache:690 - Instantiated non-pickable attributes.
+2025-01-24 14:48:00.791 | INFO     | mixtera.utils.utils:deserialize_chunker_index:364 - Deserializing all files in parallel (using 284 cores).
 /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
 In addition, using fork() with Python in general is a recipe for mysterious
 deadlocks and crashes.
@@ -294,884 +198,140 @@ fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
 See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
 
   self.pid = os.fork()
-13: 2025-01-24 14:23:32.389 | DEBUG    | mixtera.core.client.mixtera_client:__init__:138 - Initialized current mixture id to -1.
-14: 2025-01-24 14:23:32.389 | DEBUG    | mixtera.core.client.mixtera_client:__init__:138 - Initialized current mixture id to -1.
-15: 2025-01-24 14:23:32.389 | DEBUG    | mixtera.core.client.mixtera_client:__init__:138 - Initialized current mixture id to -1.
-12: 2025-01-24 14:23:32.389 | DEBUG    | mixtera.core.client.mixtera_client:__init__:138 - Initialized current mixture id to -1.
-13: 2025-01-24,14:23:32 | INFO | Creating Mixtera dataset with 4 data parallel groups.
-14: 2025-01-24,14:23:32 | INFO | Creating Mixtera dataset with 4 data parallel groups.
-15: 2025-01-24,14:23:32 | INFO | Creating Mixtera dataset with 4 data parallel groups.
-12: 2025-01-24,14:23:32 | INFO | Creating Mixtera dataset with 4 data parallel groups.
-12: 2025-01-24 14:23:32.391 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_init_status_shm:163 - [Process 76851] Created shared memory objects for 4 workers
-13: 2025-01-24 14:23:32.391 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_init_status_shm:163 - [Process 76852] Created shared memory objects for 4 workers
-14: 2025-01-24 14:23:32.391 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_init_status_shm:163 - [Process 76853] Created shared memory objects for 4 workers
-15: 2025-01-24 14:23:32.391 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_init_status_shm:163 - [Process 76854] Created shared memory objects for 4 workers
-12: 2025-01-24,14:23:32 | INFO | Mixtera loader initialized, num_samples: 114688, num_batches: 28
-13: 2025-01-24,14:23:32 | INFO | Mixtera loader initialized, num_samples: 114688, num_batches: 28
-15: 2025-01-24,14:23:32 | INFO | Mixtera loader initialized, num_samples: 114688, num_batches: 28
-14: 2025-01-24,14:23:32 | INFO | Mixtera loader initialized, num_samples: 114688, num_batches: 28
-13: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
-13: In addition, using fork() with Python in general is a recipe for mysterious
-13: deadlocks and crashes.
-13: 
-13: The most likely reason you are seeing this error is because you are using the
-13: multiprocessing module on Linux, which uses fork() by default. This will be
-13: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
-13: 
-13: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
-13: 
-13:   self.pid = os.fork()
-14: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
-14: In addition, using fork() with Python in general is a recipe for mysterious
-14: deadlocks and crashes.
-14: 
-14: The most likely reason you are seeing this error is because you are using the
-14: multiprocessing module on Linux, which uses fork() by default. This will be
-14: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
-14: 
-14: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
-14: 
-14:   self.pid = os.fork()
-15: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
-15: In addition, using fork() with Python in general is a recipe for mysterious
-15: deadlocks and crashes.
-15: 
-15: The most likely reason you are seeing this error is because you are using the
-15: multiprocessing module on Linux, which uses fork() by default. This will be
-15: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
-15: 
-15: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
-15: 
-15:   self.pid = os.fork()
-12: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
-12: In addition, using fork() with Python in general is a recipe for mysterious
-12: deadlocks and crashes.
-12: 
-12: The most likely reason you are seeing this error is because you are using the
-12: multiprocessing module on Linux, which uses fork() by default. This will be
-12: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
-12: 
-12: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
-12: 
-12:   self.pid = os.fork()
- 7: 2025-01-24 14:23:32.400 | DEBUG    | mixtera.core.client.mixtera_client:__init__:138 - Initialized current mixture id to -1.
- 6: 2025-01-24 14:23:32.400 | DEBUG    | mixtera.core.client.mixtera_client:__init__:138 - Initialized current mixture id to -1.
- 7: 2025-01-24,14:23:32 | INFO | Creating Mixtera dataset with 4 data parallel groups.
- 5: 2025-01-24 14:23:32.400 | DEBUG    | mixtera.core.client.mixtera_client:__init__:138 - Initialized current mixture id to -1.
- 6: 2025-01-24,14:23:32 | INFO | Creating Mixtera dataset with 4 data parallel groups.
- 4: 2025-01-24 14:23:32.400 | DEBUG    | mixtera.core.client.mixtera_client:__init__:138 - Initialized current mixture id to -1.
- 5: 2025-01-24,14:23:32 | INFO | Creating Mixtera dataset with 4 data parallel groups.
- 4: 2025-01-24,14:23:32 | INFO | Creating Mixtera dataset with 4 data parallel groups.
- 7: 2025-01-24 14:23:32.401 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_init_status_shm:163 - [Process 73695] Created shared memory objects for 4 workers
- 6: 2025-01-24 14:23:32.402 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_init_status_shm:163 - [Process 73694] Created shared memory objects for 4 workers
- 5: 2025-01-24 14:23:32.402 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_init_status_shm:163 - [Process 73693] Created shared memory objects for 4 workers
- 4: 2025-01-24 14:23:32.402 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_init_status_shm:163 - [Process 73692] Created shared memory objects for 4 workers
- 7: 2025-01-24,14:23:32 | INFO | Mixtera loader initialized, num_samples: 114688, num_batches: 28
- 6: 2025-01-24,14:23:32 | INFO | Mixtera loader initialized, num_samples: 114688, num_batches: 28
- 4: 2025-01-24,14:23:32 | INFO | Mixtera loader initialized, num_samples: 114688, num_batches: 28
- 5: 2025-01-24,14:23:32 | INFO | Mixtera loader initialized, num_samples: 114688, num_batches: 28
- 7: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
- 7: In addition, using fork() with Python in general is a recipe for mysterious
- 7: deadlocks and crashes.
- 7: 
- 7: The most likely reason you are seeing this error is because you are using the
- 7: multiprocessing module on Linux, which uses fork() by default. This will be
- 7: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
- 7: 
- 7: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
- 7: 
- 7:   self.pid = os.fork()
- 5: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
- 5: In addition, using fork() with Python in general is a recipe for mysterious
- 5: deadlocks and crashes.
- 5: 
- 5: The most likely reason you are seeing this error is because you are using the
- 5: multiprocessing module on Linux, which uses fork() by default. This will be
- 5: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
- 5: 
- 5: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
- 5: 
- 5:   self.pid = os.fork()
- 6: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
- 6: In addition, using fork() with Python in general is a recipe for mysterious
- 6: deadlocks and crashes.
- 6: 
- 6: The most likely reason you are seeing this error is because you are using the
- 6: multiprocessing module on Linux, which uses fork() by default. This will be
- 6: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
- 6: 
- 6: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
- 6: 
- 6:   self.pid = os.fork()
- 4: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
- 4: In addition, using fork() with Python in general is a recipe for mysterious
- 4: deadlocks and crashes.
- 4: 
- 4: The most likely reason you are seeing this error is because you are using the
- 4: multiprocessing module on Linux, which uses fork() by default. This will be
- 4: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
- 4: 
- 4: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
- 4: 
- 4:   self.pid = os.fork()
- 9: 2025-01-24 14:23:32.416 | DEBUG    | mixtera.core.client.mixtera_client:__init__:138 - Initialized current mixture id to -1.
-11: 2025-01-24 14:23:32.416 | DEBUG    | mixtera.core.client.mixtera_client:__init__:138 - Initialized current mixture id to -1.
- 9: 2025-01-24,14:23:32 | INFO | Creating Mixtera dataset with 4 data parallel groups.
-11: 2025-01-24,14:23:32 | INFO | Creating Mixtera dataset with 4 data parallel groups.
- 8: 2025-01-24 14:23:32.416 | DEBUG    | mixtera.core.client.mixtera_client:__init__:138 - Initialized current mixture id to -1.
-10: 2025-01-24 14:23:32.416 | DEBUG    | mixtera.core.client.mixtera_client:__init__:138 - Initialized current mixture id to -1.
-10: 2025-01-24,14:23:32 | INFO | Creating Mixtera dataset with 4 data parallel groups.
- 8: 2025-01-24,14:23:32 | INFO | Creating Mixtera dataset with 4 data parallel groups.
- 9: 2025-01-24 14:23:32.418 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_init_status_shm:163 - [Process 273679] Created shared memory objects for 4 workers
-11: 2025-01-24 14:23:32.418 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_init_status_shm:163 - [Process 273681] Created shared memory objects for 4 workers
- 8: 2025-01-24 14:23:32.418 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_init_status_shm:163 - [Process 273678] Created shared memory objects for 4 workers
-10: 2025-01-24 14:23:32.418 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_init_status_shm:163 - [Process 273680] Created shared memory objects for 4 workers
- 9: 2025-01-24,14:23:32 | INFO | Mixtera loader initialized, num_samples: 114688, num_batches: 28
-11: 2025-01-24,14:23:32 | INFO | Mixtera loader initialized, num_samples: 114688, num_batches: 28
-10: 2025-01-24,14:23:32 | INFO | Mixtera loader initialized, num_samples: 114688, num_batches: 28
- 8: 2025-01-24,14:23:32 | INFO | Mixtera loader initialized, num_samples: 114688, num_batches: 28
-11: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
-11: In addition, using fork() with Python in general is a recipe for mysterious
-11: deadlocks and crashes.
-11: 
-11: The most likely reason you are seeing this error is because you are using the
-11: multiprocessing module on Linux, which uses fork() by default. This will be
-11: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
-11: 
-11: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
-11: 
-11:   self.pid = os.fork()
- 9: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
- 9: In addition, using fork() with Python in general is a recipe for mysterious
- 9: deadlocks and crashes.
- 9: 
- 9: The most likely reason you are seeing this error is because you are using the
- 9: multiprocessing module on Linux, which uses fork() by default. This will be
- 9: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
- 9: 
- 9: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
- 9: 
- 9:   self.pid = os.fork()
-10: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
-10: In addition, using fork() with Python in general is a recipe for mysterious
-10: deadlocks and crashes.
-10: 
-10: The most likely reason you are seeing this error is because you are using the
-10: multiprocessing module on Linux, which uses fork() by default. This will be
-10: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
-10: 
-10: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
-10: 
-10:   self.pid = os.fork()
- 8: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
- 8: In addition, using fork() with Python in general is a recipe for mysterious
- 8: deadlocks and crashes.
- 8: 
- 8: The most likely reason you are seeing this error is because you are using the
- 8: multiprocessing module on Linux, which uses fork() by default. This will be
- 8: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
- 8: 
- 8: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
- 8: 
- 8:   self.pid = os.fork()
-Deserializing Files (using 284 cores):   0%|          | 0/2176 [00:00<?, ?it/s]Deserializing Files (using 284 cores):  43%|████▎     | 932/2176 [00:00<00:00, 9241.83it/s]Deserializing Files (using 284 cores):  96%|█████████▌| 2089/2176 [00:00<00:00, 10606.34it/s]Deserializing Files (using 284 cores): 100%|██████████| 2176/2176 [00:00<00:00, 9407.12it/s] 
-Merging loaded results:   0%|          | 0/2176 [00:00<?, ?it/s]Merging loaded results: 100%|██████████| 2176/2176 [00:00<00:00, 1868332.75it/s]
-2025-01-24 14:23:33.634 | DEBUG    | mixtera.core.query.query_result:from_cache:694 - Loaded chunker index.
-2025-01-24 14:23:33.655 | DEBUG    | mixtera.core.query.query_result:_update_key_id_map:110 - Updated key-id-map:
+Deserializing Files (using 284 cores):   0%|          | 0/2176 [00:00<?, ?it/s]Deserializing Files (using 284 cores):  56%|█████▌    | 1215/2176 [00:00<00:00, 12111.12it/s]Deserializing Files (using 284 cores): 100%|██████████| 2176/2176 [00:00<00:00, 12163.15it/s]
+Merging loaded results:   0%|          | 0/2176 [00:00<?, ?it/s]Merging loaded results: 100%|██████████| 2176/2176 [00:00<00:00, 1611371.03it/s]
+2025-01-24 14:48:02.155 | DEBUG    | mixtera.core.query.query_result:from_cache:694 - Loaded chunker index.
+2025-01-24 14:48:02.260 | DEBUG    | mixtera.core.query.query_result:_update_key_id_map:110 - Updated key-id-map:
 {dataset:CC12M: 0}
 
-2025-01-24 14:23:33.656 | DEBUG    | mixtera.core.query.chunk_distributor:__init__:53 - [91892/91892] Instantiating ChunkDistributor for job mixtera_openclip_20250124_142248
-2025-01-24 14:23:33.656 | INFO     | mixtera.core.client.local.local_stub:_register_query:166 - Registered query select<>([]) for job mixtera_openclip_20250124_142248, with mixture {"mixture": "arbitrary_mixture", "chunk_size": 1024}
-2025-01-24 14:23:33.656 | DEBUG    | mixtera.network.server.server:_register_query:77 - Registered query with success = True and executed it.
- 0: 2025-01-24 14:23:33.657 | DEBUG    | mixtera.network.connection.server_connection:_execute_query:162 - Got success = True from server.
- 0: 2025-01-24 14:23:33.658 | INFO     | mixtera.core.client.server.server_stub:execute_query:72 - Registered query for job mixtera_openclip_20250124_142248 at server!
- 0: 2025-01-24,14:23:33 | INFO | Mixtera loader initialized, num_samples: 114688, num_batches: 28
-2025-01-24 14:23:33.663 | DEBUG    | mixtera.core.query.query_result:_chunk_generator:419 - Obtained new None mixture.
-2025-01-24 14:23:33.663 | DEBUG    | mixtera.core.query.query_result:_persist_mixture_log:119 - Persisting mixture log to disk...
-2025-01-24 14:23:33.665 | DEBUG    | mixtera.core.query.query_result:_persist_mixture_log:132 - Mixture log persisted.
- 3: 2025-01-24 14:23:33.675 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 2: 2025-01-24 14:23:33.675 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 2: 2025-01-24 14:23:33.682 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 3: 2025-01-24 14:23:33.689 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 1: 2025-01-24 14:23:33.689 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 3: 2025-01-24 14:23:33.689 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 2: 2025-01-24 14:23:33.689 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 1: 2025-01-24 14:23:33.689 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 1: 2025-01-24 14:23:33.689 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 1: 2025-01-24 14:23:33.696 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 3: 2025-01-24 14:23:33.696 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 2: 2025-01-24 14:23:33.696 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-15: 2025-01-24 14:23:33.703 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-15: 2025-01-24 14:23:33.710 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-15: 2025-01-24 14:23:33.716 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-13: 2025-01-24 14:23:33.716 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-12: 2025-01-24 14:23:33.717 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-13: 2025-01-24 14:23:33.717 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-14: 2025-01-24 14:23:33.717 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-12: 2025-01-24 14:23:33.717 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-13: 2025-01-24 14:23:33.717 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-14: 2025-01-24 14:23:33.717 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-12: 2025-01-24 14:23:33.717 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-14: 2025-01-24 14:23:33.717 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 7: 2025-01-24 14:23:33.723 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 7: 2025-01-24 14:23:33.735 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 5: 2025-01-24 14:23:33.742 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 7: 2025-01-24 14:23:33.743 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 5: 2025-01-24 14:23:33.743 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 5: 2025-01-24 14:23:33.743 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 4: 2025-01-24 14:23:33.749 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-15: 2025-01-24 14:23:33.749 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-13: 2025-01-24 14:23:33.749 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 6: 2025-01-24 14:23:33.749 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 4: 2025-01-24 14:23:33.749 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-14: 2025-01-24 14:23:33.750 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 6: 2025-01-24 14:23:33.750 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 4: 2025-01-24 14:23:33.750 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-12: 2025-01-24 14:23:33.750 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 6: 2025-01-24 14:23:33.751 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 4: 2025-01-24 14:23:33.756 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 7: 2025-01-24 14:23:33.756 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 5: 2025-01-24 14:23:33.756 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 6: 2025-01-24 14:23:33.757 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-10: 2025-01-24 14:23:33.764 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 9: 2025-01-24 14:23:33.770 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 9: 2025-01-24 14:23:33.771 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-10: 2025-01-24 14:23:33.777 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-10: 2025-01-24 14:23:33.777 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 8: 2025-01-24 14:23:33.777 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 9: 2025-01-24 14:23:33.777 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-11: 2025-01-24 14:23:33.778 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 8: 2025-01-24 14:23:33.778 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-11: 2025-01-24 14:23:33.778 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 8: 2025-01-24 14:23:33.778 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-11: 2025-01-24 14:23:33.778 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 8: 2025-01-24 14:23:33.784 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-10: 2025-01-24 14:23:33.784 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-11: 2025-01-24 14:23:33.784 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 9: 2025-01-24 14:23:33.784 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 0: wandb: Currently logged in as: tkerimoglu (ethz-easl). Use `wandb login --relogin` to force relogin
- 0: wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
- 0: wandb: Tracking run with wandb version 0.19.4
- 0: wandb: Run data is saved locally in /workspace/wandb/run-20250124_142334-2025_01_24-14_23_24-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp
- 0: wandb: Run `wandb offline` to turn off syncing.
- 0: wandb: Syncing run 2025_01_24-14_23_24-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp
- 0: wandb: ⭐️ View project at https://wandb.ai/ethz-easl/open-clip
- 0: wandb: 🚀 View run at https://wandb.ai/ethz-easl/open-clip/runs/2025_01_24-14_23_24-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp
- 0: 2025-01-24,14:23:35 | INFO | Start epoch 0
- 0: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
- 0: In addition, using fork() with Python in general is a recipe for mysterious
- 0: deadlocks and crashes.
- 0: 
- 0: The most likely reason you are seeing this error is because you are using the
- 0: multiprocessing module on Linux, which uses fork() by default. This will be
- 0: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
- 0: 
- 0: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
- 0: 
- 0:   self.pid = os.fork()
- 0: 2025-01-24 14:23:35.530 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 0: 2025-01-24 14:23:35.530 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 0: 2025-01-24 14:23:35.531 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 0: 2025-01-24 14:23:35.538 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 7: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
- 7:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
-14: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
-14:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
-15: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
-15:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
- 0: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
- 0:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
-13: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
-13:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
- 6: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
- 6:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
-12: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
-12:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
- 4: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
- 4:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
- 5: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
- 5:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
- 1: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
- 1:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
- 3: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
- 3:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
- 2: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
- 2:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
-11: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
-11:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
- 8: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
- 8:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
- 9: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
- 9:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
-10: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
-10:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
- 0: 2025-01-24,14:23:39 | INFO | Train Epoch: 0 [  4096/114688 (4%)] Data (t): 1.985 Batch (t): 4.285, 955.782/s, 59.7364/s/gpu LR: 0.000000 Logit Scale: 14.286 Contrastive_loss: 8.3770 (8.3770) Loss: 8.3770 (8.3770)
- 0: [rank0]:I0124 14:23:39.537000 92836 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
- 1: [rank1]:I0124 14:23:40.095000 92837 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
- 2: [rank2]:I0124 14:23:40.095000 92838 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
- 8: [rank8]:I0124 14:23:40.095000 273678 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
-10: [rank10]:I0124 14:23:40.095000 273680 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
- 4: [rank4]:I0124 14:23:40.095000 73692 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
-11: [rank11]:I0124 14:23:40.095000 273681 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
-14: [rank14]:I0124 14:23:40.095000 76853 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
- 5: [rank5]:I0124 14:23:40.095000 73693 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
- 9: [rank9]:I0124 14:23:40.095000 273679 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
-13: [rank13]:I0124 14:23:40.095000 76852 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
- 6: [rank6]:I0124 14:23:40.095000 73694 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
-15: [rank15]:I0124 14:23:40.095000 76854 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
- 7: [rank7]:I0124 14:23:40.095000 73695 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
- 3: [rank3]:I0124 14:23:40.095000 92839 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
-12: [rank12]:I0124 14:23:40.095000 76851 torch/nn/parallel/distributed.py:1529] Reducer buckets have been rebuilt in this iteration.
-12: 2025-01-24 14:23:43.079 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-14: 2025-01-24 14:23:43.079 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 0: 2025-01-24 14:23:43.087 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-15: 2025-01-24 14:23:43.094 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 7: 2025-01-24 14:23:43.111 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 5: 2025-01-24 14:23:43.112 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 3: 2025-01-24 14:23:43.114 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 1: 2025-01-24 14:23:43.115 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 2: 2025-01-24 14:23:43.116 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 4: 2025-01-24 14:23:43.121 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 6: 2025-01-24 14:23:43.131 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-13: 2025-01-24 14:23:43.133 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 8: 2025-01-24 14:23:43.146 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-11: 2025-01-24 14:23:43.153 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-10: 2025-01-24 14:23:43.153 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 9: 2025-01-24 14:23:43.164 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-11: 2025-01-24 14:23:43.741 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 8: 2025-01-24 14:23:43.741 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 0: 2025-01-24 14:23:43.748 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-10: 2025-01-24 14:23:43.749 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 9: 2025-01-24 14:23:43.758 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 1: 2025-01-24 14:23:43.759 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 3: 2025-01-24 14:23:43.779 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 2: 2025-01-24 14:23:43.800 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-14: 2025-01-24 14:23:43.827 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 7: 2025-01-24 14:23:43.835 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 5: 2025-01-24 14:23:43.843 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-12: 2025-01-24 14:23:43.847 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-15: 2025-01-24 14:23:43.851 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-13: 2025-01-24 14:23:43.854 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 4: 2025-01-24 14:23:43.855 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 6: 2025-01-24 14:23:43.861 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-14: 2025-01-24 14:23:44.354 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-12: 2025-01-24 14:23:44.355 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-13: 2025-01-24 14:23:44.357 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-15: 2025-01-24 14:23:44.379 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 7: 2025-01-24 14:23:44.399 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 0: 2025-01-24 14:23:44.405 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 5: 2025-01-24 14:23:44.406 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 1: 2025-01-24 14:23:44.412 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 4: 2025-01-24 14:23:44.422 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 2: 2025-01-24 14:23:44.427 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 3: 2025-01-24 14:23:44.427 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 8: 2025-01-24 14:23:44.490 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-11: 2025-01-24 14:23:44.498 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-10: 2025-01-24 14:23:44.505 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 9: 2025-01-24 14:23:44.505 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 6: 2025-01-24 14:23:44.509 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-14: 2025-01-24 14:23:45.051 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-12: 2025-01-24 14:23:45.058 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 7: 2025-01-24 14:23:45.065 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 5: 2025-01-24 14:23:45.066 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 0: 2025-01-24 14:23:45.073 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 2: 2025-01-24 14:23:45.073 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-13: 2025-01-24 14:23:45.073 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-15: 2025-01-24 14:23:45.073 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 8: 2025-01-24 14:23:45.087 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 3: 2025-01-24 14:23:45.087 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 1: 2025-01-24 14:23:45.088 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-10: 2025-01-24 14:23:45.088 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
-11: 2025-01-24 14:23:45.088 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 4: 2025-01-24 14:23:45.088 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 6: 2025-01-24 14:23:45.097 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 9: 2025-01-24 14:23:45.099 | DEBUG    | mixtera.core.client.mixtera_client:stream_results:268 - Set current mixture ID to 0
- 7: /usr/local/lib/python3.10/dist-packages/PIL/TiffImagePlugin.py:900: UserWarning: Corrupt EXIF data.  Expecting to read 12 bytes but only got 8. 
- 7:   warnings.warn(str(msg))
- 5: /usr/local/lib/python3.10/dist-packages/PIL/TiffImagePlugin.py:900: UserWarning: Corrupt EXIF data.  Expecting to read 12 bytes but only got 8. 
- 5:   warnings.warn(str(msg))
- 4: /usr/local/lib/python3.10/dist-packages/PIL/TiffImagePlugin.py:900: UserWarning: Corrupt EXIF data.  Expecting to read 12 bytes but only got 8. 
- 4:   warnings.warn(str(msg))
- 6: /usr/local/lib/python3.10/dist-packages/PIL/TiffImagePlugin.py:900: UserWarning: Corrupt EXIF data.  Expecting to read 12 bytes but only got 8. 
- 6:   warnings.warn(str(msg))
- 2: 2025-01-24 14:23:52.560 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 0] Shared memory closed.
-15: 2025-01-24 14:23:52.560 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 0] Shared memory closed.
- 2: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 0] Shared memory unlinked.
-15: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 0] Shared memory unlinked.
- 1: 2025-01-24 14:23:52.560 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 0] Shared memory closed.
- 3: 2025-01-24 14:23:52.560 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 0] Shared memory closed.
- 1: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 0] Shared memory unlinked.
- 3: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 0] Shared memory unlinked.
-13: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 0] Shared memory closed.
-13: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 0] Shared memory unlinked.
- 0: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 0] Shared memory closed.
-14: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 0] Shared memory closed.
- 0: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 0] Shared memory unlinked.
-14: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 0] Shared memory unlinked.
- 8: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 0] Shared memory closed.
- 9: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 0] Shared memory closed.
-10: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 0] Shared memory closed.
-11: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 0] Shared memory closed.
-11: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 0] Shared memory unlinked.
- 8: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 0] Shared memory unlinked.
- 9: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 0] Shared memory unlinked.
-10: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 0] Shared memory unlinked.
-12: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 0] Shared memory closed.
-12: 2025-01-24 14:23:52.562 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 0] Shared memory unlinked.
- 4: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 0] Shared memory closed.
- 5: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 0] Shared memory closed.
- 5: 2025-01-24 14:23:52.562 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 0] Shared memory unlinked.
- 6: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 0] Shared memory closed.
- 6: 2025-01-24 14:23:52.562 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 0] Shared memory unlinked.
- 7: 2025-01-24 14:23:52.561 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 0] Shared memory closed.
- 7: 2025-01-24 14:23:52.562 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 0] Shared memory unlinked.
- 4: 2025-01-24 14:23:52.562 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 0] Shared memory unlinked.
- 7: 2025-01-24 14:23:53.201 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_41_1_3_mixtera_openclip_20250124_142248'
- 7: This indicates multiple workers cleaned up the shm, which should not happen.
- 7: 2025-01-24 14:23:53.201 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_41_1_3_mixtera_openclip_20250124_142248'
- 7: This indicates multiple workers cleaned up the shm, which should not happen.
- 7: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 1] Shared memory closed.
- 4: 2025-01-24 14:23:53.201 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_30_1_0_mixtera_openclip_20250124_142248'
- 4: This indicates multiple workers cleaned up the shm, which should not happen.
- 5: 2025-01-24 14:23:53.201 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_79_1_1_mixtera_openclip_20250124_142248'
- 5: This indicates multiple workers cleaned up the shm, which should not happen.
- 6: 2025-01-24 14:23:53.201 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_73_1_2_mixtera_openclip_20250124_142248'
- 6: This indicates multiple workers cleaned up the shm, which should not happen.
- 7: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 1] Shared memory unlinked.
- 0: 2025-01-24 14:23:53.201 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_49_0_0_mixtera_openclip_20250124_142248'
- 0: This indicates multiple workers cleaned up the shm, which should not happen.
- 1: 2025-01-24 14:23:53.201 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_17_0_1_mixtera_openclip_20250124_142248'
- 1: This indicates multiple workers cleaned up the shm, which should not happen.
- 2: 2025-01-24 14:23:53.201 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_7_0_2_mixtera_openclip_20250124_142248'
- 2: This indicates multiple workers cleaned up the shm, which should not happen.
- 3: 2025-01-24 14:23:53.201 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_30_0_3_mixtera_openclip_20250124_142248'
- 3: This indicates multiple workers cleaned up the shm, which should not happen.
- 4: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_30_1_0_mixtera_openclip_20250124_142248'
- 4: This indicates multiple workers cleaned up the shm, which should not happen.
- 5: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_79_1_1_mixtera_openclip_20250124_142248'
- 5: This indicates multiple workers cleaned up the shm, which should not happen.
- 6: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_73_1_2_mixtera_openclip_20250124_142248'
- 6: This indicates multiple workers cleaned up the shm, which should not happen.
- 0: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_49_0_0_mixtera_openclip_20250124_142248'
- 0: This indicates multiple workers cleaned up the shm, which should not happen.
- 4: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 1] Shared memory closed.
- 1: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_17_0_1_mixtera_openclip_20250124_142248'
- 1: This indicates multiple workers cleaned up the shm, which should not happen.
- 5: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 1] Shared memory closed.
- 2: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_7_0_2_mixtera_openclip_20250124_142248'
- 2: This indicates multiple workers cleaned up the shm, which should not happen.
- 6: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 1] Shared memory closed.
- 3: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_30_0_3_mixtera_openclip_20250124_142248'
- 3: This indicates multiple workers cleaned up the shm, which should not happen.
- 4: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 1] Shared memory unlinked.
- 5: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 1] Shared memory unlinked.
- 1: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 1] Shared memory closed.
- 2: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 1] Shared memory closed.
- 6: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 1] Shared memory unlinked.
- 0: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 1] Shared memory closed.
- 3: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 1] Shared memory closed.
- 0: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 1] Shared memory unlinked.
- 1: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 1] Shared memory unlinked.
- 2: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 1] Shared memory unlinked.
- 3: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 1] Shared memory unlinked.
-12: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_60_3_0_mixtera_openclip_20250124_142248'
-12: This indicates multiple workers cleaned up the shm, which should not happen.
-13: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_33_3_1_mixtera_openclip_20250124_142248'
-13: This indicates multiple workers cleaned up the shm, which should not happen.
-14: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_13_3_2_mixtera_openclip_20250124_142248'
-14: This indicates multiple workers cleaned up the shm, which should not happen.
-15: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_26_3_3_mixtera_openclip_20250124_142248'
-15: This indicates multiple workers cleaned up the shm, which should not happen.
-12: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_60_3_0_mixtera_openclip_20250124_142248'
-12: This indicates multiple workers cleaned up the shm, which should not happen.
-13: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_33_3_1_mixtera_openclip_20250124_142248'
-13: This indicates multiple workers cleaned up the shm, which should not happen.
-14: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_13_3_2_mixtera_openclip_20250124_142248'
-14: This indicates multiple workers cleaned up the shm, which should not happen.
-15: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_26_3_3_mixtera_openclip_20250124_142248'
-15: This indicates multiple workers cleaned up the shm, which should not happen.
- 8: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_29_2_0_mixtera_openclip_20250124_142248'
- 8: This indicates multiple workers cleaned up the shm, which should not happen.
- 9: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_59_2_1_mixtera_openclip_20250124_142248'
- 9: This indicates multiple workers cleaned up the shm, which should not happen.
-10: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_73_2_2_mixtera_openclip_20250124_142248'
-10: This indicates multiple workers cleaned up the shm, which should not happen.
-12: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 1] Shared memory closed.
-11: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_57_2_3_mixtera_openclip_20250124_142248'
-11: This indicates multiple workers cleaned up the shm, which should not happen.
-13: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 1] Shared memory closed.
-14: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 1] Shared memory closed.
-15: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 1] Shared memory closed.
-12: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 1] Shared memory unlinked.
- 8: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_29_2_0_mixtera_openclip_20250124_142248'
- 8: This indicates multiple workers cleaned up the shm, which should not happen.
-13: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 1] Shared memory unlinked.
-14: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 1] Shared memory unlinked.
-15: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 1] Shared memory unlinked.
- 9: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_59_2_1_mixtera_openclip_20250124_142248'
- 9: This indicates multiple workers cleaned up the shm, which should not happen.
-10: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_73_2_2_mixtera_openclip_20250124_142248'
-10: This indicates multiple workers cleaned up the shm, which should not happen.
-11: 2025-01-24 14:23:53.202 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_57_2_3_mixtera_openclip_20250124_142248'
-11: This indicates multiple workers cleaned up the shm, which should not happen.
-10: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 1] Shared memory closed.
-11: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 1] Shared memory closed.
- 8: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 1] Shared memory closed.
- 8: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 1] Shared memory unlinked.
- 9: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 1] Shared memory closed.
- 9: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 1] Shared memory unlinked.
-10: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 1] Shared memory unlinked.
-11: 2025-01-24 14:23:53.202 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 1] Shared memory unlinked.
-12: 2025-01-24 14:23:53.852 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_60_3_0_mixtera_openclip_20250124_142248'
-12: This indicates multiple workers cleaned up the shm, which should not happen.
-13: 2025-01-24 14:23:53.852 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_33_3_1_mixtera_openclip_20250124_142248'
-13: This indicates multiple workers cleaned up the shm, which should not happen.
- 0: 2025-01-24 14:23:53.852 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_49_0_0_mixtera_openclip_20250124_142248'
- 0: This indicates multiple workers cleaned up the shm, which should not happen.
-14: 2025-01-24 14:23:53.852 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_13_3_2_mixtera_openclip_20250124_142248'
-14: This indicates multiple workers cleaned up the shm, which should not happen.
- 1: 2025-01-24 14:23:53.852 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_17_0_1_mixtera_openclip_20250124_142248'
- 1: This indicates multiple workers cleaned up the shm, which should not happen.
-15: 2025-01-24 14:23:53.852 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_26_3_3_mixtera_openclip_20250124_142248'
-15: This indicates multiple workers cleaned up the shm, which should not happen.
- 2: 2025-01-24 14:23:53.852 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_7_0_2_mixtera_openclip_20250124_142248'
- 2: This indicates multiple workers cleaned up the shm, which should not happen.
-12: 2025-01-24 14:23:53.853 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_60_3_0_mixtera_openclip_20250124_142248'
-12: This indicates multiple workers cleaned up the shm, which should not happen.
- 3: 2025-01-24 14:23:53.852 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_30_0_3_mixtera_openclip_20250124_142248'
- 3: This indicates multiple workers cleaned up the shm, which should not happen.
-13: 2025-01-24 14:23:53.853 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_33_3_1_mixtera_openclip_20250124_142248'
-13: This indicates multiple workers cleaned up the shm, which should not happen.
-14: 2025-01-24 14:23:53.853 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_13_3_2_mixtera_openclip_20250124_142248'
-14: This indicates multiple workers cleaned up the shm, which should not happen.
-15: 2025-01-24 14:23:53.853 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_26_3_3_mixtera_openclip_20250124_142248'
-15: This indicates multiple workers cleaned up the shm, which should not happen.
-12: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 2] Shared memory closed.
-13: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 2] Shared memory closed.
-14: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 2] Shared memory closed.
- 0: 2025-01-24 14:23:53.853 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_49_0_0_mixtera_openclip_20250124_142248'
- 0: This indicates multiple workers cleaned up the shm, which should not happen.
- 1: 2025-01-24 14:23:53.853 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_17_0_1_mixtera_openclip_20250124_142248'
- 1: This indicates multiple workers cleaned up the shm, which should not happen.
-15: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 2] Shared memory closed.
- 2: 2025-01-24 14:23:53.853 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_7_0_2_mixtera_openclip_20250124_142248'
- 2: This indicates multiple workers cleaned up the shm, which should not happen.
-14: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 2] Shared memory unlinked.
- 3: 2025-01-24 14:23:53.853 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_30_0_3_mixtera_openclip_20250124_142248'
- 3: This indicates multiple workers cleaned up the shm, which should not happen.
-12: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 2] Shared memory unlinked.
-13: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 2] Shared memory unlinked.
-15: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 2] Shared memory unlinked.
- 0: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 2] Shared memory closed.
- 1: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 2] Shared memory closed.
- 2: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 2] Shared memory closed.
- 3: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 2] Shared memory closed.
- 3: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 2] Shared memory unlinked.
- 0: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 2] Shared memory unlinked.
- 1: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 2] Shared memory unlinked.
- 2: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 2] Shared memory unlinked.
- 8: 2025-01-24 14:23:53.853 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_29_2_0_mixtera_openclip_20250124_142248'
- 8: This indicates multiple workers cleaned up the shm, which should not happen.
- 9: 2025-01-24 14:23:53.853 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_59_2_1_mixtera_openclip_20250124_142248'
- 9: This indicates multiple workers cleaned up the shm, which should not happen.
-10: 2025-01-24 14:23:53.853 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_73_2_2_mixtera_openclip_20250124_142248'
-10: This indicates multiple workers cleaned up the shm, which should not happen.
-11: 2025-01-24 14:23:53.853 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_57_2_3_mixtera_openclip_20250124_142248'
-11: This indicates multiple workers cleaned up the shm, which should not happen.
- 8: 2025-01-24 14:23:53.853 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_29_2_0_mixtera_openclip_20250124_142248'
- 8: This indicates multiple workers cleaned up the shm, which should not happen.
- 9: 2025-01-24 14:23:53.853 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_59_2_1_mixtera_openclip_20250124_142248'
- 9: This indicates multiple workers cleaned up the shm, which should not happen.
-10: 2025-01-24 14:23:53.853 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_73_2_2_mixtera_openclip_20250124_142248'
-10: This indicates multiple workers cleaned up the shm, which should not happen.
-11: 2025-01-24 14:23:53.853 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_57_2_3_mixtera_openclip_20250124_142248'
-11: This indicates multiple workers cleaned up the shm, which should not happen.
- 8: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 2] Shared memory closed.
- 9: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 2] Shared memory closed.
-10: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 2] Shared memory closed.
-11: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 2] Shared memory closed.
-11: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 2] Shared memory unlinked.
- 8: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 2] Shared memory unlinked.
- 9: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 2] Shared memory unlinked.
-10: 2025-01-24 14:23:53.853 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 2] Shared memory unlinked.
- 6: 2025-01-24 14:23:53.853 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_73_1_2_mixtera_openclip_20250124_142248'
- 6: This indicates multiple workers cleaned up the shm, which should not happen.
- 6: 2025-01-24 14:23:53.854 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_73_1_2_mixtera_openclip_20250124_142248'
- 6: This indicates multiple workers cleaned up the shm, which should not happen.
- 6: 2025-01-24 14:23:53.854 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 2] Shared memory closed.
- 6: 2025-01-24 14:23:53.854 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 2] Shared memory unlinked.
- 5: 2025-01-24 14:23:53.854 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_79_1_1_mixtera_openclip_20250124_142248'
- 5: This indicates multiple workers cleaned up the shm, which should not happen.
- 7: 2025-01-24 14:23:53.854 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_41_1_3_mixtera_openclip_20250124_142248'
- 7: This indicates multiple workers cleaned up the shm, which should not happen.
- 4: 2025-01-24 14:23:53.854 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_30_1_0_mixtera_openclip_20250124_142248'
- 4: This indicates multiple workers cleaned up the shm, which should not happen.
- 5: 2025-01-24 14:23:53.854 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_79_1_1_mixtera_openclip_20250124_142248'
- 5: This indicates multiple workers cleaned up the shm, which should not happen.
- 7: 2025-01-24 14:23:53.854 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_41_1_3_mixtera_openclip_20250124_142248'
- 7: This indicates multiple workers cleaned up the shm, which should not happen.
- 4: 2025-01-24 14:23:53.854 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_30_1_0_mixtera_openclip_20250124_142248'
- 4: This indicates multiple workers cleaned up the shm, which should not happen.
- 5: 2025-01-24 14:23:53.854 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 2] Shared memory closed.
- 7: 2025-01-24 14:23:53.854 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 2] Shared memory closed.
- 4: 2025-01-24 14:23:53.854 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 2] Shared memory closed.
- 5: 2025-01-24 14:23:53.854 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 2] Shared memory unlinked.
- 7: 2025-01-24 14:23:53.854 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 2] Shared memory unlinked.
- 4: 2025-01-24 14:23:53.854 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 2] Shared memory unlinked.
- 0: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_49_0_0_mixtera_openclip_20250124_142248'
- 0: This indicates multiple workers cleaned up the shm, which should not happen.
- 1: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_17_0_1_mixtera_openclip_20250124_142248'
- 1: This indicates multiple workers cleaned up the shm, which should not happen.
- 2: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_7_0_2_mixtera_openclip_20250124_142248'
- 2: This indicates multiple workers cleaned up the shm, which should not happen.
- 3: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_30_0_3_mixtera_openclip_20250124_142248'
- 3: This indicates multiple workers cleaned up the shm, which should not happen.
-12: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_60_3_0_mixtera_openclip_20250124_142248'
-12: This indicates multiple workers cleaned up the shm, which should not happen.
-13: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_33_3_1_mixtera_openclip_20250124_142248'
-13: This indicates multiple workers cleaned up the shm, which should not happen.
-14: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_13_3_2_mixtera_openclip_20250124_142248'
-14: This indicates multiple workers cleaned up the shm, which should not happen.
-15: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_26_3_3_mixtera_openclip_20250124_142248'
-15: This indicates multiple workers cleaned up the shm, which should not happen.
- 0: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_49_0_0_mixtera_openclip_20250124_142248'
- 0: This indicates multiple workers cleaned up the shm, which should not happen.
- 1: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_17_0_1_mixtera_openclip_20250124_142248'
- 1: This indicates multiple workers cleaned up the shm, which should not happen.
- 2: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_7_0_2_mixtera_openclip_20250124_142248'
- 2: This indicates multiple workers cleaned up the shm, which should not happen.
- 8: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_29_2_0_mixtera_openclip_20250124_142248'
- 8: This indicates multiple workers cleaned up the shm, which should not happen.
- 3: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_30_0_3_mixtera_openclip_20250124_142248'
- 3: This indicates multiple workers cleaned up the shm, which should not happen.
- 9: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_59_2_1_mixtera_openclip_20250124_142248'
- 9: This indicates multiple workers cleaned up the shm, which should not happen.
-10: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_73_2_2_mixtera_openclip_20250124_142248'
-10: This indicates multiple workers cleaned up the shm, which should not happen.
-12: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_60_3_0_mixtera_openclip_20250124_142248'
-12: This indicates multiple workers cleaned up the shm, which should not happen.
- 0: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 3] Shared memory closed.
-11: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_57_2_3_mixtera_openclip_20250124_142248'
-11: This indicates multiple workers cleaned up the shm, which should not happen.
-13: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_33_3_1_mixtera_openclip_20250124_142248'
-13: This indicates multiple workers cleaned up the shm, which should not happen.
- 1: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 3] Shared memory closed.
-14: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_13_3_2_mixtera_openclip_20250124_142248'
-14: This indicates multiple workers cleaned up the shm, which should not happen.
- 2: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 3] Shared memory closed.
-15: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_26_3_3_mixtera_openclip_20250124_142248'
-15: This indicates multiple workers cleaned up the shm, which should not happen.
- 3: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 3] Shared memory closed.
- 0: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 3] Shared memory unlinked.
- 1: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 3] Shared memory unlinked.
-12: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 3] Shared memory closed.
- 2: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 3] Shared memory unlinked.
-13: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 3] Shared memory closed.
- 3: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 3] Shared memory unlinked.
-14: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 3] Shared memory closed.
-15: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 3] Shared memory closed.
-12: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 3] Shared memory unlinked.
- 8: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_29_2_0_mixtera_openclip_20250124_142248'
- 8: This indicates multiple workers cleaned up the shm, which should not happen.
- 9: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_59_2_1_mixtera_openclip_20250124_142248'
- 9: This indicates multiple workers cleaned up the shm, which should not happen.
-13: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 3] Shared memory unlinked.
-10: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_73_2_2_mixtera_openclip_20250124_142248'
-10: This indicates multiple workers cleaned up the shm, which should not happen.
-14: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 3] Shared memory unlinked.
-11: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_57_2_3_mixtera_openclip_20250124_142248'
-11: This indicates multiple workers cleaned up the shm, which should not happen.
-15: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 3] Shared memory unlinked.
- 8: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 3] Shared memory closed.
- 9: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 3] Shared memory closed.
-10: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 3] Shared memory closed.
-11: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 3] Shared memory closed.
- 8: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 3] Shared memory unlinked.
-10: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 3] Shared memory unlinked.
-11: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 3] Shared memory unlinked.
- 5: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_79_1_1_mixtera_openclip_20250124_142248'
- 5: This indicates multiple workers cleaned up the shm, which should not happen.
- 9: 2025-01-24 14:23:54.495 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 3] Shared memory unlinked.
- 7: 2025-01-24 14:23:54.495 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_41_1_3_mixtera_openclip_20250124_142248'
- 7: This indicates multiple workers cleaned up the shm, which should not happen.
- 5: 2025-01-24 14:23:54.496 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_79_1_1_mixtera_openclip_20250124_142248'
- 5: This indicates multiple workers cleaned up the shm, which should not happen.
- 7: 2025-01-24 14:23:54.496 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_41_1_3_mixtera_openclip_20250124_142248'
- 7: This indicates multiple workers cleaned up the shm, which should not happen.
- 5: 2025-01-24 14:23:54.496 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 3] Shared memory closed.
- 7: 2025-01-24 14:23:54.496 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 3] Shared memory closed.
- 5: 2025-01-24 14:23:54.496 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 3] Shared memory unlinked.
- 7: 2025-01-24 14:23:54.496 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 3] Shared memory unlinked.
- 4: 2025-01-24 14:23:54.496 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_30_1_0_mixtera_openclip_20250124_142248'
- 4: This indicates multiple workers cleaned up the shm, which should not happen.
- 6: 2025-01-24 14:23:54.496 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:208 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mts_73_1_2_mixtera_openclip_20250124_142248'
- 6: This indicates multiple workers cleaned up the shm, which should not happen.
- 4: 2025-01-24 14:23:54.496 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_30_1_0_mixtera_openclip_20250124_142248'
- 4: This indicates multiple workers cleaned up the shm, which should not happen.
- 6: 2025-01-24 14:23:54.496 | WARNING  | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:223 - FileNotFoundError during shared memory cleanup: [Errno 2] No such file or directory: '/mtc_73_1_2_mixtera_openclip_20250124_142248'
- 6: This indicates multiple workers cleaned up the shm, which should not happen.
- 4: 2025-01-24 14:23:54.496 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 3] Shared memory closed.
- 4: 2025-01-24 14:23:54.496 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 3] Shared memory unlinked.
- 6: 2025-01-24 14:23:54.496 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:231 - [Worker 3] Shared memory closed.
- 6: 2025-01-24 14:23:54.496 | INFO     | mixtera.torch.mixtera_torch_dataset:_cleanup_shared_memory:233 - [Worker 3] Shared memory unlinked.
- 0: 2025-01-24,14:23:57 | INFO | Train Epoch: 0 [114688/114688 (100%)] Data (t): 0.182 Batch (t): 0.674, 6468.02/s, 404.251/s/gpu LR: 0.000001 Logit Scale: 14.285 Contrastive_loss: 8.3149 (8.3460) Loss: 8.3149 (8.3460)
- 2: 2025-01-24 14:23:57.732 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mts_7_0_2_mixtera_openclip_20250124_142248 already unlinked.
- 2: 2025-01-24 14:23:57.732 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mtc_7_0_2_mixtera_openclip_20250124_142248 already unlinked.
- 5: 2025-01-24 14:23:57.733 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mts_79_1_1_mixtera_openclip_20250124_142248 already unlinked.
- 5: 2025-01-24 14:23:57.733 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mtc_79_1_1_mixtera_openclip_20250124_142248 already unlinked.
-14: 2025-01-24 14:23:57.736 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mts_13_3_2_mixtera_openclip_20250124_142248 already unlinked.
-14: 2025-01-24 14:23:57.736 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mtc_13_3_2_mixtera_openclip_20250124_142248 already unlinked.
- 2: [rank2]:I0124 14:23:57.738000 92838 torch/_dynamo/utils.py:399] TorchDynamo compilation metrics:
- 2: [rank2]:I0124 14:23:57.738000 92838 torch/_dynamo/utils.py:399] Function    Runtimes (s)
- 2: [rank2]:I0124 14:23:57.738000 92838 torch/_dynamo/utils.py:399] ----------  --------------
- 5: [rank5]:I0124 14:23:57.738000 73693 torch/_dynamo/utils.py:399] TorchDynamo compilation metrics:
- 5: [rank5]:I0124 14:23:57.738000 73693 torch/_dynamo/utils.py:399] Function    Runtimes (s)
- 5: [rank5]:I0124 14:23:57.738000 73693 torch/_dynamo/utils.py:399] ----------  --------------
- 2: [rank2]:I0124 14:23:57.740000 92838 torch/_subclasses/fake_tensor.py:2435] FakeTensor cache stats:
- 2: [rank2]:I0124 14:23:57.740000 92838 torch/_subclasses/fake_tensor.py:2436]   cache_hits: 0
- 2: [rank2]:I0124 14:23:57.740000 92838 torch/_subclasses/fake_tensor.py:2437]   cache_misses: 0
-14: [rank14]:I0124 14:23:57.741000 76853 torch/_dynamo/utils.py:399] TorchDynamo compilation metrics:
-14: [rank14]:I0124 14:23:57.741000 76853 torch/_dynamo/utils.py:399] Function    Runtimes (s)
-14: [rank14]:I0124 14:23:57.741000 76853 torch/_dynamo/utils.py:399] ----------  --------------
- 5: [rank5]:I0124 14:23:57.741000 73693 torch/_subclasses/fake_tensor.py:2435] FakeTensor cache stats:
- 5: [rank5]:I0124 14:23:57.741000 73693 torch/_subclasses/fake_tensor.py:2436]   cache_hits: 0
- 5: [rank5]:I0124 14:23:57.741000 73693 torch/_subclasses/fake_tensor.py:2437]   cache_misses: 0
-14: [rank14]:I0124 14:23:57.742000 76853 torch/_subclasses/fake_tensor.py:2435] FakeTensor cache stats:
-14: [rank14]:I0124 14:23:57.743000 76853 torch/_subclasses/fake_tensor.py:2436]   cache_hits: 0
-14: [rank14]:I0124 14:23:57.743000 76853 torch/_subclasses/fake_tensor.py:2437]   cache_misses: 0
-15: 2025-01-24 14:23:57.745 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mts_26_3_3_mixtera_openclip_20250124_142248 already unlinked.
-15: 2025-01-24 14:23:57.746 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mtc_26_3_3_mixtera_openclip_20250124_142248 already unlinked.
- 1: 2025-01-24 14:23:57.746 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mtc_17_0_1_mixtera_openclip_20250124_142248 already unlinked.
- 1: 2025-01-24 14:23:57.746 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mts_17_0_1_mixtera_openclip_20250124_142248 already unlinked.
- 3: 2025-01-24 14:23:57.746 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mtc_30_0_3_mixtera_openclip_20250124_142248 already unlinked.
- 3: 2025-01-24 14:23:57.746 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mts_30_0_3_mixtera_openclip_20250124_142248 already unlinked.
- 8: 2025-01-24 14:23:57.746 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mts_29_2_0_mixtera_openclip_20250124_142248 already unlinked.
- 8: 2025-01-24 14:23:57.746 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mtc_29_2_0_mixtera_openclip_20250124_142248 already unlinked.
- 9: 2025-01-24 14:23:57.746 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mts_59_2_1_mixtera_openclip_20250124_142248 already unlinked.
-12: 2025-01-24 14:23:57.746 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mts_60_3_0_mixtera_openclip_20250124_142248 already unlinked.
- 9: 2025-01-24 14:23:57.746 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mtc_59_2_1_mixtera_openclip_20250124_142248 already unlinked.
-12: 2025-01-24 14:23:57.747 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mtc_60_3_0_mixtera_openclip_20250124_142248 already unlinked.
-13: 2025-01-24 14:23:57.747 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mts_33_3_1_mixtera_openclip_20250124_142248 already unlinked.
-13: 2025-01-24 14:23:57.747 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mtc_33_3_1_mixtera_openclip_20250124_142248 already unlinked.
- 6: 2025-01-24 14:23:57.747 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mtc_73_1_2_mixtera_openclip_20250124_142248 already unlinked.
-10: 2025-01-24 14:23:57.747 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mts_73_2_2_mixtera_openclip_20250124_142248 already unlinked.
- 6: 2025-01-24 14:23:57.748 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mts_73_1_2_mixtera_openclip_20250124_142248 already unlinked.
-10: 2025-01-24 14:23:57.748 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mtc_73_2_2_mixtera_openclip_20250124_142248 already unlinked.
- 7: 2025-01-24 14:23:57.748 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mts_41_1_3_mixtera_openclip_20250124_142248 already unlinked.
- 7: 2025-01-24 14:23:57.748 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mtc_41_1_3_mixtera_openclip_20250124_142248 already unlinked.
- 4: 2025-01-24 14:23:57.748 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mts_30_1_0_mixtera_openclip_20250124_142248 already unlinked.
- 4: 2025-01-24 14:23:57.748 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mtc_30_1_0_mixtera_openclip_20250124_142248 already unlinked.
-11: 2025-01-24 14:23:57.749 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mts_57_2_3_mixtera_openclip_20250124_142248 already unlinked.
-11: 2025-01-24 14:23:57.749 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mtc_57_2_3_mixtera_openclip_20250124_142248 already unlinked.
-15: [rank15]:I0124 14:23:57.750000 76854 torch/_dynamo/utils.py:399] TorchDynamo compilation metrics:
-15: [rank15]:I0124 14:23:57.750000 76854 torch/_dynamo/utils.py:399] Function    Runtimes (s)
-15: [rank15]:I0124 14:23:57.750000 76854 torch/_dynamo/utils.py:399] ----------  --------------
- 1: [rank1]:I0124 14:23:57.750000 92837 torch/_dynamo/utils.py:399] TorchDynamo compilation metrics:
- 1: [rank1]:I0124 14:23:57.750000 92837 torch/_dynamo/utils.py:399] Function    Runtimes (s)
- 1: [rank1]:I0124 14:23:57.750000 92837 torch/_dynamo/utils.py:399] ----------  --------------
- 3: [rank3]:I0124 14:23:57.750000 92839 torch/_dynamo/utils.py:399] TorchDynamo compilation metrics:
- 3: [rank3]:I0124 14:23:57.750000 92839 torch/_dynamo/utils.py:399] Function    Runtimes (s)
- 3: [rank3]:I0124 14:23:57.750000 92839 torch/_dynamo/utils.py:399] ----------  --------------
-12: [rank12]:I0124 14:23:57.751000 76851 torch/_dynamo/utils.py:399] TorchDynamo compilation metrics:
-12: [rank12]:I0124 14:23:57.751000 76851 torch/_dynamo/utils.py:399] Function    Runtimes (s)
-12: [rank12]:I0124 14:23:57.751000 76851 torch/_dynamo/utils.py:399] ----------  --------------
-13: [rank13]:I0124 14:23:57.751000 76852 torch/_dynamo/utils.py:399] TorchDynamo compilation metrics:
-13: [rank13]:I0124 14:23:57.751000 76852 torch/_dynamo/utils.py:399] Function    Runtimes (s)
-13: [rank13]:I0124 14:23:57.751000 76852 torch/_dynamo/utils.py:399] ----------  --------------
- 9: [rank9]:I0124 14:23:57.752000 273679 torch/_dynamo/utils.py:399] TorchDynamo compilation metrics:
- 9: [rank9]:I0124 14:23:57.752000 273679 torch/_dynamo/utils.py:399] Function    Runtimes (s)
- 9: [rank9]:I0124 14:23:57.752000 273679 torch/_dynamo/utils.py:399] ----------  --------------
- 8: [rank8]:I0124 14:23:57.752000 273678 torch/_dynamo/utils.py:399] TorchDynamo compilation metrics:
- 8: [rank8]:I0124 14:23:57.752000 273678 torch/_dynamo/utils.py:399] Function    Runtimes (s)
- 8: [rank8]:I0124 14:23:57.752000 273678 torch/_dynamo/utils.py:399] ----------  --------------
-15: [rank15]:I0124 14:23:57.752000 76854 torch/_subclasses/fake_tensor.py:2435] FakeTensor cache stats:
-15: [rank15]:I0124 14:23:57.752000 76854 torch/_subclasses/fake_tensor.py:2436]   cache_hits: 0
-15: [rank15]:I0124 14:23:57.752000 76854 torch/_subclasses/fake_tensor.py:2437]   cache_misses: 0
- 6: [rank6]:I0124 14:23:57.752000 73694 torch/_dynamo/utils.py:399] TorchDynamo compilation metrics:
- 6: [rank6]:I0124 14:23:57.752000 73694 torch/_dynamo/utils.py:399] Function    Runtimes (s)
- 6: [rank6]:I0124 14:23:57.752000 73694 torch/_dynamo/utils.py:399] ----------  --------------
- 7: [rank7]:I0124 14:23:57.752000 73695 torch/_dynamo/utils.py:399] TorchDynamo compilation metrics:
- 7: [rank7]:I0124 14:23:57.752000 73695 torch/_dynamo/utils.py:399] Function    Runtimes (s)
- 7: [rank7]:I0124 14:23:57.752000 73695 torch/_dynamo/utils.py:399] ----------  --------------
-10: [rank10]:I0124 14:23:57.752000 273680 torch/_dynamo/utils.py:399] TorchDynamo compilation metrics:
-10: [rank10]:I0124 14:23:57.752000 273680 torch/_dynamo/utils.py:399] Function    Runtimes (s)
-10: [rank10]:I0124 14:23:57.752000 273680 torch/_dynamo/utils.py:399] ----------  --------------
- 1: [rank1]:I0124 14:23:57.752000 92837 torch/_subclasses/fake_tensor.py:2435] FakeTensor cache stats:
- 1: [rank1]:I0124 14:23:57.752000 92837 torch/_subclasses/fake_tensor.py:2436]   cache_hits: 0
- 1: [rank1]:I0124 14:23:57.752000 92837 torch/_subclasses/fake_tensor.py:2437]   cache_misses: 0
- 3: [rank3]:I0124 14:23:57.752000 92839 torch/_subclasses/fake_tensor.py:2435] FakeTensor cache stats:
- 4: [rank4]:I0124 14:23:57.752000 73692 torch/_dynamo/utils.py:399] TorchDynamo compilation metrics:
- 4: [rank4]:I0124 14:23:57.752000 73692 torch/_dynamo/utils.py:399] Function    Runtimes (s)
- 4: [rank4]:I0124 14:23:57.752000 73692 torch/_dynamo/utils.py:399] ----------  --------------
- 3: [rank3]:I0124 14:23:57.752000 92839 torch/_subclasses/fake_tensor.py:2436]   cache_hits: 0
- 3: [rank3]:I0124 14:23:57.752000 92839 torch/_subclasses/fake_tensor.py:2437]   cache_misses: 0
-11: [rank11]:I0124 14:23:57.753000 273681 torch/_dynamo/utils.py:399] TorchDynamo compilation metrics:
-11: [rank11]:I0124 14:23:57.753000 273681 torch/_dynamo/utils.py:399] Function    Runtimes (s)
-11: [rank11]:I0124 14:23:57.753000 273681 torch/_dynamo/utils.py:399] ----------  --------------
-12: [rank12]:I0124 14:23:57.753000 76851 torch/_subclasses/fake_tensor.py:2435] FakeTensor cache stats:
-12: [rank12]:I0124 14:23:57.753000 76851 torch/_subclasses/fake_tensor.py:2436]   cache_hits: 0
-12: [rank12]:I0124 14:23:57.753000 76851 torch/_subclasses/fake_tensor.py:2437]   cache_misses: 0
- 9: [rank9]:I0124 14:23:57.753000 273679 torch/_subclasses/fake_tensor.py:2435] FakeTensor cache stats:
- 8: [rank8]:I0124 14:23:57.754000 273678 torch/_subclasses/fake_tensor.py:2435] FakeTensor cache stats:
-13: [rank13]:I0124 14:23:57.754000 76852 torch/_subclasses/fake_tensor.py:2435] FakeTensor cache stats:
- 9: [rank9]:I0124 14:23:57.754000 273679 torch/_subclasses/fake_tensor.py:2436]   cache_hits: 0
- 9: [rank9]:I0124 14:23:57.754000 273679 torch/_subclasses/fake_tensor.py:2437]   cache_misses: 0
- 8: [rank8]:I0124 14:23:57.754000 273678 torch/_subclasses/fake_tensor.py:2436]   cache_hits: 0
-13: [rank13]:I0124 14:23:57.754000 76852 torch/_subclasses/fake_tensor.py:2436]   cache_hits: 0
- 8: [rank8]:I0124 14:23:57.754000 273678 torch/_subclasses/fake_tensor.py:2437]   cache_misses: 0
-13: [rank13]:I0124 14:23:57.754000 76852 torch/_subclasses/fake_tensor.py:2437]   cache_misses: 0
- 7: [rank7]:I0124 14:23:57.754000 73695 torch/_subclasses/fake_tensor.py:2435] FakeTensor cache stats:
-10: [rank10]:I0124 14:23:57.754000 273680 torch/_subclasses/fake_tensor.py:2435] FakeTensor cache stats:
- 6: [rank6]:I0124 14:23:57.754000 73694 torch/_subclasses/fake_tensor.py:2435] FakeTensor cache stats:
- 7: [rank7]:I0124 14:23:57.754000 73695 torch/_subclasses/fake_tensor.py:2436]   cache_hits: 0
-10: [rank10]:I0124 14:23:57.754000 273680 torch/_subclasses/fake_tensor.py:2436]   cache_hits: 0
- 6: [rank6]:I0124 14:23:57.754000 73694 torch/_subclasses/fake_tensor.py:2436]   cache_hits: 0
- 7: [rank7]:I0124 14:23:57.754000 73695 torch/_subclasses/fake_tensor.py:2437]   cache_misses: 0
-10: [rank10]:I0124 14:23:57.754000 273680 torch/_subclasses/fake_tensor.py:2437]   cache_misses: 0
- 6: [rank6]:I0124 14:23:57.754000 73694 torch/_subclasses/fake_tensor.py:2437]   cache_misses: 0
- 4: [rank4]:I0124 14:23:57.754000 73692 torch/_subclasses/fake_tensor.py:2435] FakeTensor cache stats:
- 4: [rank4]:I0124 14:23:57.755000 73692 torch/_subclasses/fake_tensor.py:2436]   cache_hits: 0
- 4: [rank4]:I0124 14:23:57.755000 73692 torch/_subclasses/fake_tensor.py:2437]   cache_misses: 0
-11: [rank11]:I0124 14:23:57.755000 273681 torch/_subclasses/fake_tensor.py:2435] FakeTensor cache stats:
-11: [rank11]:I0124 14:23:57.755000 273681 torch/_subclasses/fake_tensor.py:2436]   cache_hits: 0
-11: [rank11]:I0124 14:23:57.755000 273681 torch/_subclasses/fake_tensor.py:2437]   cache_misses: 0
-12: [rank12]:[W124 14:23:57.529581241 ProcessGroupNCCL.cpp:1262] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
- 4: [rank4]:[W124 14:23:57.771700268 ProcessGroupNCCL.cpp:1262] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
- 8: [rank8]:[W124 14:23:57.907847749 ProcessGroupNCCL.cpp:1262] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
- 0: wandb:                                                                                
- 0: wandb: 
- 0: wandb: Run history:
- 0: wandb:                             step ▁█
- 0: wandb:                 train/batch_time █▁
- 0: wandb:           train/contrastive_loss █▁
- 0: wandb:                  train/data_time █▁
- 0: wandb:                       train/loss █▁
- 0: wandb:                         train/lr ▁█
- 0: wandb:         train/samples_per_second ▁█
- 0: wandb: train/samples_per_second_per_gpu ▁█
- 0: wandb:                      train/scale █▁
- 0: wandb: 
- 0: wandb: Run summary:
- 0: wandb:                             step 27
- 0: wandb:                 train/batch_time 0.63327
- 0: wandb:           train/contrastive_loss 8.31495
- 0: wandb:                  train/data_time 0.00631
- 0: wandb:                       train/loss 8.31495
- 0: wandb:                         train/lr 0.0
- 0: wandb:         train/samples_per_second 6468.0174
- 0: wandb: train/samples_per_second_per_gpu 404.25109
- 0: wandb:                      train/scale 14.28549
- 0: wandb: 
- 0: wandb: 🚀 View run 2025_01_24-14_23_24-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp at: https://wandb.ai/ethz-easl/open-clip/runs/2025_01_24-14_23_24-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp
- 0: wandb: ⭐️ View project at: https://wandb.ai/ethz-easl/open-clip
- 0: wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
- 0: wandb: Find logs at: ./wandb/run-20250124_142334-2025_01_24-14_23_24-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp/logs
- 0: 2025-01-24 14:24:02.557 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mts_49_0_0_mixtera_openclip_20250124_142248 already unlinked.
- 0: 2025-01-24 14:24:02.557 | DEBUG    | mixtera.torch.mixtera_torch_dataset:_cleanup_all_shared_memory:35 - Shared memory mtc_49_0_0_mixtera_openclip_20250124_142248 already unlinked.
- 0: [rank0]:I0124 14:24:02.560000 92836 torch/_dynamo/utils.py:399] TorchDynamo compilation metrics:
- 0: [rank0]:I0124 14:24:02.560000 92836 torch/_dynamo/utils.py:399] Function    Runtimes (s)
- 0: [rank0]:I0124 14:24:02.560000 92836 torch/_dynamo/utils.py:399] ----------  --------------
- 0: [rank0]:I0124 14:24:02.563000 92836 torch/_subclasses/fake_tensor.py:2435] FakeTensor cache stats:
- 0: [rank0]:I0124 14:24:02.563000 92836 torch/_subclasses/fake_tensor.py:2436]   cache_hits: 0
- 0: [rank0]:I0124 14:24:02.563000 92836 torch/_subclasses/fake_tensor.py:2437]   cache_misses: 0
- 0: [rank0]:[W124 14:24:02.330040294 ProcessGroupNCCL.cpp:1262] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+2025-01-24 14:48:02.260 | DEBUG    | mixtera.core.query.chunk_distributor:__init__:53 - [75840/75840] Instantiating ChunkDistributor for job mixtera_openclip_20250124_144731
+2025-01-24 14:48:02.261 | INFO     | mixtera.core.client.local.local_stub:_register_query:166 - Registered query select<>([]) for job mixtera_openclip_20250124_144731, with mixture {"mixture": "arbitrary_mixture", "chunk_size": 1024}
+2025-01-24 14:48:02.261 | DEBUG    | mixtera.network.server.server:_register_query:77 - Registered query with success = True and executed it.
+0: 2025-01-24,14:48:02 | INFO | Mixtera loader initialized, num_samples: 100352, num_batches: 392
+0: wandb: Currently logged in as: tkerimoglu (ethz-easl). Use `wandb login --relogin` to force relogin
+0: wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+0: wandb: Tracking run with wandb version 0.19.4
+0: wandb: Run data is saved locally in /workspace/wandb/run-20250124_144802-2025_01_24-14_47_58-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp
+0: wandb: Run `wandb offline` to turn off syncing.
+0: wandb: Syncing run 2025_01_24-14_47_58-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp
+0: wandb: ⭐️ View project at https://wandb.ai/ethz-easl/open-clip
+0: wandb: 🚀 View run at https://wandb.ai/ethz-easl/open-clip/runs/2025_01_24-14_47_58-model_ViT-B-32-lr_0.0005-b_256-j_4-p_amp
+0: 2025-01-24,14:48:03 | INFO | Start epoch 0
+0: /usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: Using fork() can cause Polars to deadlock in the child process.
+0: In addition, using fork() with Python in general is a recipe for mysterious
+0: deadlocks and crashes.
+0: 
+0: The most likely reason you are seeing this error is because you are using the
+0: multiprocessing module on Linux, which uses fork() by default. This will be
+0: fixed in Python 3.14. Until then, you want to use the "spawn" context instead.
+0: 
+0: See https://docs.pola.rs/user-guide/misc/multiprocessing/ for details.
+0: 
+0:   self.pid = os.fork()
+2025-01-24 14:48:03.859 | DEBUG    | mixtera.core.query.query_result:_chunk_generator:419 - Obtained new None mixture.
+2025-01-24 14:48:03.860 | DEBUG    | mixtera.core.query.query_result:_persist_mixture_log:119 - Persisting mixture log to disk...
+2025-01-24 14:48:03.862 | DEBUG    | mixtera.core.query.query_result:_persist_mixture_log:132 - Mixture log persisted.
+0: /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:818: UserWarning: cuDNN SDPA backward got grad_output.strides() != output.strides(), attempting to materialize a grad_output with matching strides... (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/native/cudnn/MHA.cpp:670.)
+0:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+0: 2025-01-24,14:48:08 | INFO | Train Epoch: 0 [   256/100352 (0%)] Data (t): 3.204 Batch (t): 5.169, 49.5268/s, 49.5268/s/gpu LR: 0.000000 Logit Scale: 14.286 Contrastive_loss: 5.5930 (5.5930) Loss: 5.5930 (5.5930)
+0: /usr/local/lib/python3.10/dist-packages/PIL/TiffImagePlugin.py:900: UserWarning: Corrupt EXIF data.  Expecting to read 12 bytes but only got 8. 
+0:   warnings.warn(str(msg))
+0: 2025-01-24,14:48:40 | INFO | Train Epoch: 0 [ 25856/100352 (26%)] Data (t): 0.236 Batch (t): 0.320, 2935.52/s, 2935.52/s/gpu LR: 0.000005 Logit Scale: 14.285 Contrastive_loss: 5.5203 (5.5566) Loss: 5.5203 (5.5566)
+0: 2025-01-24,14:49:13 | INFO | Train Epoch: 0 [ 51456/100352 (51%)] Data (t): 0.244 Batch (t): 0.328, 2867.83/s, 2867.83/s/gpu LR: 0.000010 Logit Scale: 14.283 Contrastive_loss: 5.4276 (5.5136) Loss: 5.4276 (5.5136)
+0: 2025-01-24,14:49:46 | INFO | Train Epoch: 0 [ 77056/100352 (77%)] Data (t): 0.247 Batch (t): 0.331, 2951.60/s, 2951.60/s/gpu LR: 0.000015 Logit Scale: 14.280 Contrastive_loss: 5.3335 (5.4686) Loss: 5.3335 (5.4686)
+0: 2025-01-24,14:50:15 | INFO | Train Epoch: 0 [100352/100352 (100%)] Data (t): 0.226 Batch (t): 0.310, 2963.84/s, 2963.84/s/gpu LR: 0.000020 Logit Scale: 14.279 Contrastive_loss: 5.2947 (5.4338) Loss: 5.2947 (5.4338)
+0: 2025-01-24,14:50:17 | INFO | Start epoch 1
+0: Traceback (most recent call last):
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip-mixtera/src/open_clip_train/main.py", line 558, in <module>
+0:     main(sys.argv[1:])
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip-mixtera/src/open_clip_train/main.py", line 484, in main
+0:     train_one_epoch(model, data, loss, epoch, optimizer, scaler, scheduler, dist_model, args, tb_writer=writer)
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip-mixtera/src/open_clip_train/train.py", line 85, in train_one_epoch
+0:     for i, batch in enumerate(dataloader):
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip_env/lib/python3.10/site-packages/webdataset/pipeline.py", line 70, in iterator
+0:     yield from self.iterator1()
+0:   File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 701, in __next__
+0:     data = self._next_data()
+0:   File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1465, in _next_data
+0:     return self._process_data(data)
+0:   File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1491, in _process_data
+0:     data.reraise()
+0:   File "/usr/local/lib/python3.10/dist-packages/torch/_utils.py", line 719, in reraise
+0:     raise exception
+0: AssertionError: Caught AssertionError in DataLoader worker process 0.
+0: Original Traceback (most recent call last):
+0:   File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/worker.py", line 351, in _worker_loop
+0:     data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+0:   File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/fetch.py", line 42, in fetch
+0:     data = next(self.dataset_iter)
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip_env/lib/python3.10/site-packages/webdataset/pipeline.py", line 70, in iterator
+0:     yield from self.iterator1()
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip_env/lib/python3.10/site-packages/webdataset/filters.py", line 487, in _batched
+0:     for sample in data:
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip_env/lib/python3.10/site-packages/webdataset/filters.py", line 397, in _to_tuple
+0:     for sample in data:
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip_env/lib/python3.10/site-packages/webda
+0: taset/filters.py", line 372, in _map_dict
+0:     for sample in data:
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip_env/lib/python3.10/site-packages/webdataset/filters.py", line 322, in _rename
+0:     for sample in data:
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip_env/lib/python3.10/site-packages/webdataset/filters.py", line 285, in _decode
+0:     for sample in data:
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip_env/lib/python3.10/site-packages/webdataset/filters.py", line 250, in _select
+0:     for sample in data:
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/mixtera/mixtera/torch/mixtera_torch_dataset.py", line 247, in __iter__
+0:     assert self._comp_shm is not None and self._status_shm is not None, "SharedMemory objects are None."
+0: AssertionError: SharedMemory objects are None.
+0: 
+0: Traceback (most recent call last):
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip-mixtera/src/open_clip_train/main.py", line 558, in <module>
+0:     main(sys.argv[1:])
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip-mixtera/src/open_clip_train/main.py", line 484, in main
+0:     train_one_epoch(model, data, loss, epoch, optimizer, scaler, scheduler, dist_model, args, tb_writer=writer)
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip-mixtera/src/open_clip_train/train.py", line 85, in train_one_epoch
+0:     for i, batch in enumerate(dataloader):
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip_env/lib/python3.10/site-packages/webdataset/pipeline.py", line 70, in iterator
+0:     yield from self.iterator1()
+0:   File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 701, in __next__
+0:     data = self._next_data()
+0:   File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1465, in _next_data
+0:     return self._process_data(data)
+0:   F
+0: ile "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1491, in _process_data
+0:     data.reraise()
+0:   File "/usr/local/lib/python3.10/dist-packages/torch/_utils.py", line 719, in reraise
+0:     raise exception
+0: AssertionError: Caught AssertionError in DataLoader worker process 0.
+0: Original Traceback (most recent call last):
+0:   File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/worker.py", line 351, in _worker_loop
+0:     data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+0:   File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/fetch.py", line 42, in fetch
+0:     data = next(self.dataset_iter)
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip_env/lib/python3.10/site-packages/webdataset/pipeline.py", line 70, in iterator
+0:     yield from self.iterator1()
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip_env/lib/python3.10/site-packages/webdataset/filters.py", line 487, in _batched
+0:     for sample in data:
+0:   File "/iopsstor/scratch/cscs
+0: /tkerimog/open_clip/open_clip_env/lib/python3.10/site-packages/webdataset/filters.py", line 397, in _to_tuple
+0:     for sample in data:
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip_env/lib/python3.10/site-packages/webdataset/filters.py", line 372, in _map_dict
+0:     for sample in data:
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip_env/lib/python3.10/site-packages/webdataset/filters.py", line 322, in _rename
+0:     for sample in data:
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip_env/lib/python3.10/site-packages/webdataset/filters.py", line 285, in _decode
+0:     for sample in data:
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/open_clip_env/lib/python3.10/site-packages/webdataset/filters.py", line 250, in _select
+0:     for sample in data:
+0:   File "/iopsstor/scratch/cscs/tkerimog/open_clip/mixtera/mixtera/torch/mixtera_torch_dataset.py", line 247, in __iter__
+0:     assert self._comp_shm is not None and self._status_shm is not None, "SharedMemory objects are None."
+0: AssertionError
+0: : SharedMemory objects are None.
+0: 
+0: I0124 14:50:20.055000 76778 torch/_dynamo/utils.py:399] TorchDynamo compilation metrics:
+0: I0124 14:50:20.055000 76778 torch/_dynamo/utils.py:399] Function    Runtimes (s)
+0: I0124 14:50:20.055000 76778 torch/_dynamo/utils.py:399] ----------  --------------
+0: I0124 14:50:20.057000 76778 torch/_subclasses/fake_tensor.py:2435] FakeTensor cache stats:
+0: I0124 14:50:20.057000 76778 torch/_subclasses/fake_tensor.py:2436]   cache_hits: 0
+0: I0124 14:50:20.058000 76778 torch/_subclasses/fake_tensor.py:2437]   cache_misses: 0
+srun: error: nid005059: task 0: Exited with exit code 1
+srun: Terminating StepId=109472.0

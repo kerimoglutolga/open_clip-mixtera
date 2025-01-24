@@ -61,12 +61,7 @@ def get_wds_loader(args, preprocess_img, is_train, epoch=0, floor=False, tokeniz
     
     # Setup Mixtera
     local_rank, global_rank, world_size = world_info_from_env()
-
-    dp_groups = os.environ.get("SLURM_NNODES", None)
-    assert dp_groups is not None, "SLURM_NNODES environment variable must be set."
-
-    dp_groups = int(dp_groups)
-    assert world_size % dp_groups == 0, "WORLD_SIZE must be divisible by DP_GROUPS"
+    dp_groups = world_size
 
     client = MixteraClient.from_remote(host=server_host, port=int(server_port))
     query = Query.for_job(job_id).select(None)
@@ -78,13 +73,13 @@ def get_wds_loader(args, preprocess_img, is_train, epoch=0, floor=False, tokeniz
         mixture=mixture,
         num_workers=args.workers,
         dp_groups=dp_groups,
-        nodes_per_group=world_size // dp_groups
+        nodes_per_group=1,
     )
 
     rse = ResultStreamingArgs(job_id=job_id,
                               tunnel_via_server=False,
-                              dp_group_id=global_rank // (world_size // dp_groups),
-                              node_id=global_rank % (world_size // dp_groups)
+                              dp_group_id=global_rank,
+                              node_id=0
                               )
 
 

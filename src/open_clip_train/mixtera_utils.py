@@ -10,6 +10,7 @@ import uuid
 import warnings
 
 from loguru import logger
+import torch
 import webdataset as wds
 
 from mixtera.core.client import MixteraClient, ResultStreamingArgs
@@ -119,6 +120,8 @@ def get_wds_loader(args, preprocess_img, is_train, epoch=0, floor=False, tokeniz
     else:
         # last batches are partial, eval is done on single (master) node
         num_batches = math.ceil(num_samples / args.batch_size)
+
+    torch.distributed.barrier()
 
     dataloader = wds.WebLoader(
         dataset,

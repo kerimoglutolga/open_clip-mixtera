@@ -1,0 +1,8 @@
+components:
+  key_1:
+    domain: quickdraw
+    weight: 0.25
+  key_2:
+    domain: real
+    weight: 0.75
+name: mixture-1

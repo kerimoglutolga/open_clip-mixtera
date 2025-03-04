@@ -2,11 +2,10 @@
 Initialize Mixtera for training with WebDataset and configure parallelism.
 By default, we will use one data parallel group per node. 
 """
+
 import logging
 import math
 import os
-import sys
-import uuid
 import warnings
 
 from loguru import logger
@@ -16,15 +15,14 @@ import webdataset as wds
 from mixtera.core.client import MixteraClient, ResultStreamingArgs
 from mixtera.core.client.mixtera_client import QueryExecutionArgs
 from mixtera.core.query import Query
-from mixtera.core.query.mixture import ArbitraryMixture
-from mixtera.torch import MixteraTorchDataset
+from mixtera.core.query.mixture.mixture_key import MixtureKey
+from mixtera.core.query.mixture import StaticMixture, ArbitraryMixture, InferringMixture
+from mixtera.multimodal.webdataset.pipeline import MixteraDataPipeline
 from open_clip_train.distributed import world_info_from_env
 
 warnings.simplefilter("ignore", RuntimeWarning)
 warnings.simplefilter("ignore", UserWarning)
 
-logger.remove()
-# logger.add(sys.stderr, level="INFO")
 
 def _webdataset_setup(args, is_train, epoch, floor):
     from open_clip_train.data import get_dataset_size, SharedEpoch, expand_urls
@@ -42,19 +40,26 @@ def _webdataset_setup(args, is_train, epoch, floor):
             num_samples, num_shards = get_dataset_size(input_shards)
             if not num_samples:
                 raise RuntimeError(
-                    'Currently, the number of dataset samples must be specified for the training dataset. '
-                    'Please specify it via `--train-num-samples` if no dataset length info is present.')
+                    "Currently, the number of dataset samples must be specified for the training dataset. "
+                    "Please specify it via `--train-num-samples` if no dataset length info is present."
+                )
     else:
         # Eval will just exhaust the iterator if the size is not specified.
-        num_samples = args.val_num_samples or 0 
+        num_samples = args.val_num_samples or 0
 
     shared_epoch = SharedEpoch(epoch=epoch)
 
     return num_samples, num_shards, shared_epoch
 
 
-def get_wds_loader(args, preprocess_img, is_train, epoch=0, floor=False, tokenizer=None):
-    from open_clip_train.data import filter_no_caption_or_no_image, log_and_continue, DataInfo
+def get_wds_loader(
+    args, preprocess_img, is_train, epoch=0, floor=False, tokenizer=None
+):
+    from open_clip_train.data import (
+        filter_no_caption_or_no_image,
+        log_and_continue,
+        DataInfo,
+    )
 
     # Fetch Mixtera server info from env
     server_host = os.environ.get("MIXTERA_SERVER_ADDR", None)
@@ -67,14 +72,22 @@ def get_wds_loader(args, preprocess_img, is_train, epoch=0, floor=False, tokeniz
     assert job_id is not None, "MIXTERA_JOB_ID must be set"
 
     job_id += f"_{epoch}"
-    
+
     # Setup Mixtera
     local_rank, global_rank, world_size = world_info_from_env()
     dp_groups = world_size
 
     client = MixteraClient.from_remote(host=server_host, port=int(server_port))
-    query = Query.for_job(job_id).select(None)
-    mixture = ArbitraryMixture(chunk_size=chunk_size)
+    query = Query.for_job(job_id).select(("dataset", "==", "DomainNet"))
+
+    mixture_json = json.loads(os.environ.get("MIXTERA_MIXTURE"))
+
+    mixture = StaticMixture(
+        chunk_size=chunk_size,
+        mixture={
+            MixtureKey({k: v for k, v in comp.items() if k != "weight"}): comp["weight"]
+            for comp in mixture_json["components"]
+        })
 
     logging.info(f"Creating Mixtera dataset with {dp_groups} data parallel groups.")
 
@@ -83,40 +96,52 @@ def get_wds_loader(args, preprocess_img, is_train, epoch=0, floor=False, tokeniz
         num_workers=args.workers,
         dp_groups=dp_groups,
         nodes_per_group=1,
+        cycle_components=True,
     )
 
-    rse = ResultStreamingArgs(job_id=job_id,
-                              tunnel_via_server=False,
-                              dp_group_id=global_rank,
-                              node_id=0
-                              )
-
+    rse = ResultStreamingArgs(
+        job_id=job_id, tunnel_via_server=False, dp_group_id=global_rank, node_id=0
+    )
 
     pipeline = [
-        MixteraTorchDataset(client, query, qea, rse),
         wds.select(filter_no_caption_or_no_image),
+        wds.map(lambda x: {k: v for k, v in x.items() if k in ["jpg", "txt"]}),
         wds.decode("pilrgb", handler=log_and_continue),
         wds.rename(image="jpg;png;jpeg;webp", text="txt"),
         wds.map_dict(image=preprocess_img, text=lambda text: tokenizer(text)[0]),
         wds.to_tuple("image", "text"),
-        wds.batched(args.batch_size, partial=not is_train)
+        wds.batched(args.batch_size, partial=not is_train),
     ]
 
-    dataset = wds.DataPipeline(*pipeline)
+    dataset = MixteraDataPipeline(
+        client=client,
+        query=query,
+        query_execution_args=qea,
+        result_streaming_args=rse,
+        pipeline=pipeline,
+    )
 
-    num_samples, num_shards, shared_epoch = _webdataset_setup(args, is_train, epoch, floor)
+    num_samples, num_shards, shared_epoch = _webdataset_setup(
+        args, is_train, epoch, floor
+    )
 
     if is_train:
-        assert num_shards >= args.workers * args.world_size, 'number of shards must be >= total workers'
+        assert (
+            num_shards >= args.workers * args.world_size
+        ), "number of shards must be >= total workers"
         # roll over and repeat a few samples to get same number of full batches on each node
         round_fn = math.floor if floor else math.ceil
         global_batch_size = args.batch_size * args.world_size
         num_batches = round_fn(num_samples / global_batch_size)
         num_workers = max(1, args.workers)
-        num_worker_batches = round_fn(num_batches / num_workers)  # per dataloader worker
+        num_worker_batches = round_fn(
+            num_batches / num_workers
+        )  # per dataloader worker
         num_batches = num_worker_batches * num_workers
         num_samples = num_batches * global_batch_size
-        dataset = dataset.with_epoch(num_worker_batches)  # each worker is iterating over this
+        dataset = dataset.with_epoch(
+            num_worker_batches
+        )  # each worker is iterating over this
     else:
         # last batches are partial, eval is done on single (master) node
         num_batches = math.ceil(num_samples / args.batch_size)
@@ -135,8 +160,8 @@ def get_wds_loader(args, preprocess_img, is_train, epoch=0, floor=False, tokeniz
     dataloader.num_batches = num_batches
     dataloader.num_samples = num_samples
 
-    logging.info(f"Mixtera loader initialized, num_samples: {num_samples}, num_batches: {num_batches}")
+    logging.info(
+        f"Mixtera loader initialized, num_samples: {num_samples}, num_batches: {num_batches}"
+    )
 
     return DataInfo(dataloader=dataloader, shared_epoch=shared_epoch)
-
-

@@ -3,6 +3,9 @@
 models/
 features/
 results/
+conda_pkgs/
+experiments/
+outputs/
 
 tests/data/
 *.pt

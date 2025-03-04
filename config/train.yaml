@@ -1,0 +1,31 @@
+defaults:
+  - mixture: mixture_1
+
+
+master_port: 12802
+
+mixtera:
+  server_dir: /iopsstor/scratch/cscs/tkerimog/open_clip/mixtera_server
+  server_port: 12345
+  job_id: mixtera_openclip_$(date +'%Y%m%d_%H%M%S')
+
+python_exec: /iopsstor/scratch/cscs/tkerimog/open_clip/open_clip_env/bin/python
+experiments_base: /iopsstor/scratch/cscs/tkerimog/open_clip/open_clip-mixtera/experiments
+
+slurm:
+  nodes: 1
+  ntasks_per_node: 4
+  time: "10:00:00"
+
+open_clip:
+  save_frequency: 1
+  model: ViT-B-16
+  epochs: 30
+  batch_size: 256
+  workers: 8
+  report_to: wandb
+  force_patch_dropout: 0.5
+  imagenet-val: /iopsstor/scratch/cscs/tkerimog/datasets/imagenet1k-val 
+  run_name: domainnet
+  wandb_project_name: openclip-mixtera
+  num_samples: 200000

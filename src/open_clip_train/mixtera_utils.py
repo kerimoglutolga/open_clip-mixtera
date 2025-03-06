@@ -3,6 +3,7 @@ Initialize Mixtera for training with WebDataset and configure parallelism.
 By default, we will use one data parallel group per node. 
 """
 
+import json
 import logging
 import math
 import os
@@ -65,7 +66,8 @@ def get_wds_loader(
     server_host = os.environ.get("MIXTERA_SERVER_ADDR", None)
     server_port = os.environ.get("MIXTERA_SERVER_PORT", None)
     job_id = os.environ.get("MIXTERA_JOB_ID", None)
-    chunk_size = os.environ.get("MIXTERA_CHUNK_SIZE", 1024)
+    chunk_size = int(os.environ.get("MIXTERA_CHUNK_SIZE", 1024))
+    strict = bool(os.environ.get("MIXTERA_STRICT", False))
 
     assert server_host is not None, "MIXTERA_SERVER_ADDR must be set"
     assert server_port is not None, "MIXTERA_SERVER_PORT must be set"
@@ -78,16 +80,17 @@ def get_wds_loader(
     dp_groups = world_size
 
     client = MixteraClient.from_remote(host=server_host, port=int(server_port))
-    query = Query.for_job(job_id).select(("dataset", "==", "DomainNet"))
+    query = Query.for_job(job_id).select(None)
 
     mixture_json = json.loads(os.environ.get("MIXTERA_MIXTURE"))
 
     mixture = StaticMixture(
         chunk_size=chunk_size,
         mixture={
-            MixtureKey({k: v for k, v in comp.items() if k != "weight"}): comp["weight"]
-            for comp in mixture_json["components"]
-        })
+            MixtureKey({k: [v] for k, v in comp.items() if k != "weight"}): comp["weight"]
+            for comp in mixture_json["components"].values()
+        },
+        strict=strict)
 
     logging.info(f"Creating Mixtera dataset with {dp_groups} data parallel groups.")
 
@@ -96,7 +99,6 @@ def get_wds_loader(
         num_workers=args.workers,
         dp_groups=dp_groups,
         nodes_per_group=1,
-        cycle_components=True,
     )
 
     rse = ResultStreamingArgs(

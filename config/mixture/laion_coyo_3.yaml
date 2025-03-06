@@ -1,0 +1,9 @@
+components:
+  key_1:
+    dataset: LAION400M
+    weight: 0.75
+  key_2:
+    dataset: COYO700M
+    weight: 0.25
+strict: False
+name: laion-coyo-3

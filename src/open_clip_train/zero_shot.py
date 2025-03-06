@@ -4,7 +4,7 @@ import torch
 from tqdm import tqdm
 
 from open_clip import get_input_dtype, get_tokenizer, build_zero_shot_classifier, \
-    IMAGENET_CLASSNAMES, OPENAI_IMAGENET_TEMPLATES
+    IMAGENET_CLASSNAMES, OPENAI_IMAGENET_TEMPLATES, DOMAINNET_CLASSNAMES, DOMAINNET_TEMPLATES
 from open_clip_train.precision import get_autocast
 
 
@@ -84,3 +84,43 @@ def zero_shot_eval(model, data, epoch, args, tokenizer=None):
     logging.info('Finished zero-shot imagenet.')
 
     return results
+
+def zero_shot_eval_domainnet(model, data, domain, epoch, args, tokenizer=None):
+    if args.zeroshot_frequency == 0:
+        return {}
+    if (epoch % args.zeroshot_frequency) != 0 and epoch != args.epochs:
+        return {}
+    
+    if args.distributed and not args.horovod:
+        model = model.module
+        
+    logging.info(f'Starting zero-shot domainnet {domain}.')
+
+    device = torch.device(args.device)
+    autocast = get_autocast(args.precision, device_type=device.type)
+
+    if tokenizer is None:
+        tokenizer = get_tokenizer(args.model)
+
+    with autocast():
+        classifier = build_zero_shot_classifier(
+            model,
+            tokenizer=tokenizer,
+            classnames=DOMAINNET_CLASSNAMES,
+            templates=DOMAINNET_TEMPLATES,
+            num_classes_per_batch=10,
+            device=device,
+            use_tqdm=True,
+        )
+    
+    logging.info('Using classifier')
+    
+    results = {}
+    top1, top5 = run(model, classifier, data[f"domainnet-{domain}"].dataloader, args)
+    results[f'domainnet-zeroshot-{domain}-top1'] = top1
+    results[f'domainnet-zeroshot-{domain}-top5'] = top5
+
+    logging.info(f'Finished zero-shot domainnet {domain}.')
+    return results
+
+

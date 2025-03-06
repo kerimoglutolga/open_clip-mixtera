@@ -160,6 +160,23 @@ def get_imagenet(args, preprocess_fns, split):
 
     return DataInfo(dataloader=dataloader, sampler=sampler)
 
+def get_domainnet(args, preprocess_fns, domain):
+    data_path_base = "/iopsstor/scratch/cscs/tkerimog/open_clip/domainnet_test"
+    data_path = os.path.join(data_path_base, domain + "/" + domain)
+    assert os.path.exists(data_path), f"DomainNet data not found at {data_path}."
+
+    preprocess_train, preprocess_val = preprocess_fns
+
+    dataset = datasets.ImageFolder(data_path, transform=preprocess_val)
+
+    dataloader = torch.utils.data.DataLoader(
+        dataset,
+        batch_size=args.batch_size,
+        num_workers=args.workers,
+    )
+
+    return DataInfo(dataloader=dataloader)
+
 
 def count_samples(dataloader):
     os.environ["WDS_EPOCH"] = "0"
@@ -563,5 +580,12 @@ def get_data(args, preprocess_fns, epoch=0, tokenizer=None):
 
     if args.imagenet_v2 is not None:
         data["imagenet-v2"] = get_imagenet(args, preprocess_fns, "v2")
+
+    data["domainnet-real"] = get_domainnet(args, preprocess_fns, "real")
+    data["domainnet-quickdraw"] = get_domainnet(args, preprocess_fns, "quickdraw")
+    data["domainnet-clipart"] = get_domainnet(args, preprocess_fns, "clipart")
+    data["domainnet-sketch"] = get_domainnet(args, preprocess_fns, "sketch")
+    data["domainnet-painting"] = get_domainnet(args, preprocess_fns, "painting")
+    data["domainnet-infograph"] = get_domainnet(args, preprocess_fns, "infograph")
 
     return data

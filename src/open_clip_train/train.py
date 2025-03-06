@@ -16,7 +16,7 @@ except ImportError:
 
 from open_clip import get_input_dtype, CLIP, CustomTextCLIP
 from open_clip_train.distributed import is_master
-from open_clip_train.zero_shot import zero_shot_eval
+from open_clip_train.zero_shot import zero_shot_eval, zero_shot_eval_domainnet
 from open_clip_train.precision import get_autocast
 
 
@@ -288,11 +288,23 @@ def evaluate(model, data, epoch, args, tb_writer=None, tokenizer=None):
     model.eval()
 
     zero_shot_metrics = zero_shot_eval(model, data, epoch, args, tokenizer=tokenizer)
+
+    for domain in ["clipart", "infograph", "painting", "quickdraw", "real", "sketch"]:
+        domain_metrics = zero_shot_eval_domainnet(
+            model, data, domain, epoch, args, tokenizer=tokenizer
+        )
+        zero_shot_metrics.update(domain_metrics)
+
     metrics.update(zero_shot_metrics)
 
     print(
         f"Epoch {epoch}, imagenet_top1: {zero_shot_metrics.get('imagenet-zeroshot-val-top1')}, imagenet_top5: {zero_shot_metrics.get('imagenet-zeroshot-val-top5')}"
     )
+
+    for domain in ["clipart", "infograph", "painting", "quickdraw", "real", "sketch"]:
+        print(
+            f"Epoch {epoch}, domainnet_{domain}_top1: {zero_shot_metrics.get(f'domainnet-zeroshot-{domain}-top1')}, domainnet_{domain}_top5: {zero_shot_metrics.get(f'domainnet-zeroshot-{domain}-top5')}"
+        )
 
     autocast = get_autocast(args.precision, device_type=device.type)
     input_dtype = get_input_dtype(args.precision)

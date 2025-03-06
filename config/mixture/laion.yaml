@@ -1,0 +1,5 @@
+components:
+  key_1:
+    dataset: LAION400M
+    weight: 1 
+name: laion

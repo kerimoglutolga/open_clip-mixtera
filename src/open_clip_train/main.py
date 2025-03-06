@@ -108,9 +108,8 @@ def main(args):
         args.log_path = os.path.join(log_base_path, log_filename)
         if os.path.exists(args.log_path) and not resume_latest:
             print(
-                "Error. Experiment already exists. Use --name {} to specify a new experiment."
+                "Error. Experiment already exists. Overwriting."
             )
-            return -1
 
     # Setup text logger
     args.log_level = logging.DEBUG if args.debug else logging.INFO

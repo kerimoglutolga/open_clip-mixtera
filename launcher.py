@@ -28,7 +28,7 @@ def main(cfg: DictConfig):
     mixtera_server_dest = os.path.join(experiments_dir, os.path.basename(mixtera_server_src.rstrip("/")))
 
     # Copy the mixtera server directory if it does not already exist.
-    if not os.path.exists(mixtera_server_dest):
+    if not os.path.exists(mixtera_server_dest) and cfg.mixtera.copy_server:
         print(f"Copying mixtera server directory from {mixtera_server_src} to {mixtera_server_dest} ...")
         shutil.copytree(mixtera_server_src, mixtera_server_dest)
         print("Mixtera server directory copied successfully.")
@@ -61,9 +61,11 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3
 export MASTER_PORT={cfg.master_port}
 
 export MIXTERA_SERVER_ADDR=$(hostname)
-export MIXTERA_SERVER_DIR={cfg.mixtera.server_dir}
+export MIXTERA_SERVER_DIR={mixtera_server_dest if cfg.mixtera.copy_server else cfg.mixtera.server_dir}
 export MIXTERA_JOB_ID="{cfg.mixtera.job_id}"
 export MIXTERA_SERVER_PORT={cfg.mixtera.server_port}
+export MIXTERA_CHUNK_SIZE={cfg.mixtera.chunk_size}
+export MIXTERA_STRICT={cfg.mixture.strict}
 
 export PYTHON_EXEC={cfg.python_exec}
 
@@ -97,6 +99,7 @@ $PYTHON_EXEC -u /iopsstor/scratch/cscs/tkerimog/open_clip/open_clip-mixtera/src/
 --imagenet-val {cfg.open_clip["imagenet-val"]} \\
 --name "{job_name}" \\
 --wandb-project-name "{cfg.open_clip.wandb_project_name}" \\
+--zeroshot-frequency {cfg.open_clip.zeroshot_frequency} \\
 "
 """
     # Write the sbatch script to a file inside the experiment directory.

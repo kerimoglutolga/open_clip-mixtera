@@ -1,0 +1,10 @@
+components:
+  key_1:
+    dataset: CC12M
+    weight: 0.95
+  key_2:
+    dataset: DomainNet
+    domain: real
+    weight: 0.05
+strict: False
+name: natural_lower_bound

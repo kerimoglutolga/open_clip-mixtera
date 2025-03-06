@@ -8,6 +8,8 @@ mixtera:
   server_dir: /iopsstor/scratch/cscs/tkerimog/open_clip/mixtera_server
   server_port: 12345
   job_id: mixtera_openclip_$(date +'%Y%m%d_%H%M%S')
+  copy_server: True
+  chunk_size: 2048
 
 python_exec: /iopsstor/scratch/cscs/tkerimog/open_clip/open_clip_env/bin/python
 experiments_base: /iopsstor/scratch/cscs/tkerimog/open_clip/open_clip-mixtera/experiments
@@ -15,7 +17,7 @@ experiments_base: /iopsstor/scratch/cscs/tkerimog/open_clip/open_clip-mixtera/ex
 slurm:
   nodes: 1
   ntasks_per_node: 4
-  time: "10:00:00"
+  time: "23:00:00"
 
 open_clip:
   save_frequency: 1
@@ -28,4 +30,5 @@ open_clip:
   imagenet-val: /iopsstor/scratch/cscs/tkerimog/datasets/imagenet1k-val 
   run_name: domainnet
   wandb_project_name: openclip-mixtera
-  num_samples: 200000
+  num_samples: 10000000
+  zeroshot_frequency: 2
